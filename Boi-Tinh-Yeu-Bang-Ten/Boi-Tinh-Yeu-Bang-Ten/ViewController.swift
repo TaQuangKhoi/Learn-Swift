@@ -13,9 +13,42 @@ class ViewController: UIViewController {
     @IBOutlet weak var tfdTenGai: UITextField!
     @IBOutlet weak var lblResult: UILabel!
     
+    @IBOutlet weak var switchBoiTheoTen: UISwitch!
+    @IBOutlet weak var switchBoiTheoPhanTram: UISwitch!
+    @IBOutlet weak var switchBoiTheoNgaySinh: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func actionClickSwitchBoiTheoTen(_ sender: Any) {
+        
+        switchBoiTheoTen.setOn(true, animated: true)
+        
+        switchBoiTheoPhanTram.setOn(false, animated: true)
+        
+        switchBoiTheoNgaySinh.setOn(false, animated: true)
+        
+    }
+
+    
+    @IBAction func actionClickSwitchBoiTheoPhanTram(_ sender: Any) {
+        
+        switchBoiTheoPhanTram.setOn(true, animated: true)
+        
+        switchBoiTheoTen.setOn(false, animated: true)
+        switchBoiTheoNgaySinh.setOn(false, animated: true)
+        
+        
+    }
+    
+    
+    @IBAction func actiobSwitchBoiTheoNgaySinh(_ sender: Any) {
+        switchBoiTheoPhanTram.setOn(false, animated: true)
+        
+        switchBoiTheoTen.setOn(false, animated: true)
+        switchBoiTheoNgaySinh.setOn(true, animated: true)
     }
     
     @IBAction func actionMakeResult(_ sender: Any) {
@@ -25,7 +58,8 @@ class ViewController: UIViewController {
         lblResult.text = "Kết quả: \(result)"
     }
     func LetterToNumber(letter : Character) -> Int {
-        switch letter {
+        
+        switch letter.uppercased() {
         case "A", "K", "U":
             return 1
         case "B", "S", "J":
@@ -101,18 +135,8 @@ class ViewController: UIViewController {
         return dayso
     }
     
-//    func TongCongDon2So (soNam: Int, soNu:Int) -> Int {
-//        var tong = soNu + soNam
-//
-//        if tong > 10 {
-//            let
-////            return TongCongDon(digits)
-//        } else {
-//            return tong
-//        }
-//    }
     
-    
+    // Tổng cộng dồn cho số bất kỳ, dù lớn hơn 100
     func TongCongDon (cacSo: Array<Int>) -> Int {
         var tong = 0
         for so in cacSo {
