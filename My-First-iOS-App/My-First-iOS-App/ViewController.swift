@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         lblHello.text = "Hi !!!"
+        
         lblHello.textColor = UIColor.red
     
     }
