@@ -30,6 +30,8 @@ class ViewController: UIViewController {
     
     
     @IBAction func clickBtnCat(_ sender: Any) {
+        let image = UIImage(named: "cat")
+        imgAnimal2.setImage(image, for: UIControl.State.normal)
     }
     
     @IBAction func clickBtnDog(_ sender: Any) {
