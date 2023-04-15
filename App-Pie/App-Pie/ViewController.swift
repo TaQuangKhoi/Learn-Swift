@@ -58,15 +58,23 @@ class ViewController: UIViewController {
     }
     
     /**
-     * Update the UI,
+     * Update the UI
+     * 1. Update wins, losses
+     * 2. Update Tree Image
      */
     func updateUI() {
-        var letters = [String]()
-        for letter in currentGame.formattedWord {
-            letters.append(String(letter))
-        }
-        let wordWithSpacing = letters.joined(separator: " ")
-        correctWordLabel.text = wordWithSpacing
+        // TODO: Learn about the map method, and use it in place of the loop that converts the array of characters to an array of strings in updateUI().
+        
+        // Add space between character for more precious reading
+//        var letters = [String]()
+//        // This loop
+//        for letter in currentGame.formattedWord {
+//            letters.append(String(letter))
+//        }
+//        let wordWithSpacing = letters.joined(separator: " ")
+        
+//        correctWordLabel.text = currentGame.formattedWord.map($0.append(" "))
+        
         scoreLabel.text = "Wins: \(totalWins), Losses: \(totalLosses)"
         treeImgView.image = UIImage(named: "Tree \(currentGame.incorrectMovesRemaining)")
     }

@@ -12,6 +12,9 @@ struct Game {
     var incorrectMovesRemaining: Int
     var guessedLetters: [Character]
     
+    var score: Int
+    // TODO: Add a scoring feature that awards points for each correct guess and additional points for each successful word completion.
+    
     /**
      * Add the letter to array guessedLetters
      * 
