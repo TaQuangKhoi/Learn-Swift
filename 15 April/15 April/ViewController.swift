@@ -30,12 +30,18 @@ class ViewController: UIViewController {
     }
     
     @IBAction func clickBtnDog(_ sender: Any) {
+        let image = UIImage(named: "dog")
+        imgAnimal2.setImage(image, for: UIControl.State.normal)
     }
     
     @IBAction func clickBtnHorse(_ sender: Any) {
+        let image = UIImage(named: "horse")
+        imgAnimal2.setImage(image, for: UIControl.State.normal)
     }
     
     @IBAction func clickBtnWolf(_ sender: Any) {
+        let image = UIImage(named: "wolf")
+        imgAnimal2.setImage(image, for: UIControl.State.normal)
     }
     
     func playSound(animalName: String) {
