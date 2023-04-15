@@ -253,7 +253,7 @@
                                                             <constraint firstAttribute="width" secondItem="Rbk-ry-9Ui" secondAttribute="height" multiplier="1:1" id="EIf-du-ozH"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <state key="normal" title="D"/>
+                                                        <state key="normal" title="Z"/>
                                                         <connections>
                                                             <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vG9-YJ-tNT"/>
                                                         </connections>
@@ -264,7 +264,7 @@
                                                             <constraint firstAttribute="width" secondItem="dME-1L-Vyz" secondAttribute="height" multiplier="1:1" id="VcE-iZ-LqP"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <state key="normal" title="H"/>
+                                                        <state key="normal" title="X"/>
                                                         <connections>
                                                             <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JBO-rf-5je"/>
                                                         </connections>
@@ -275,7 +275,7 @@
                                                             <constraint firstAttribute="width" secondItem="Wn9-gO-aSH" secondAttribute="height" multiplier="1:1" id="pK5-K7-tWN"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <state key="normal" title="S"/>
+                                                        <state key="normal" title="C"/>
                                                         <connections>
                                                             <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vWb-4p-kQ0"/>
                                                         </connections>
@@ -286,7 +286,7 @@
                                                             <constraint firstAttribute="width" secondItem="Idu-J0-oKr" secondAttribute="height" multiplier="1:1" id="oNk-qO-AW9"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <state key="normal" title="A"/>
+                                                        <state key="normal" title="V"/>
                                                         <connections>
                                                             <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7dC-yd-FeW"/>
                                                         </connections>
@@ -297,7 +297,7 @@
                                                             <constraint firstAttribute="width" secondItem="7l1-Ff-uts" secondAttribute="height" multiplier="1:1" id="qKS-rP-zp6"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <state key="normal" title="J"/>
+                                                        <state key="normal" title="B"/>
                                                         <connections>
                                                             <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FAd-NY-8ZT"/>
                                                         </connections>
@@ -308,7 +308,7 @@
                                                             <constraint firstAttribute="width" secondItem="ZOS-at-sBa" secondAttribute="height" multiplier="1:1" id="5vZ-TD-Gqz"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <state key="normal" title="G"/>
+                                                        <state key="normal" title="N"/>
                                                         <connections>
                                                             <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YEG-sh-gfq"/>
                                                         </connections>
@@ -319,7 +319,7 @@
                                                             <constraint firstAttribute="width" secondItem="gML-fO-4OL" secondAttribute="height" multiplier="1:1" id="2sh-xk-8WY"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <state key="normal" title="F"/>
+                                                        <state key="normal" title="M"/>
                                                         <connections>
                                                             <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N9P-br-RfY"/>
                                                         </connections>
