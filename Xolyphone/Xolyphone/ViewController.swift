@@ -15,6 +15,18 @@ class ViewController: UIViewController {
     }
 
 
-    
+    func playSound(animalName: String) {
+        guard let path = Bundle.main.path(forResource: animalName, ofType: "wav") else {
+            return }
+        let url = URL(fileURLWithPath: path)
+
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            player?.play()
+            
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
 }
 
