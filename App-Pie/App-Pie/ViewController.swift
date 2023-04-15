@@ -32,6 +32,8 @@ class ViewController: UIViewController {
         sender.isEnabled = false
         let letterString = sender.title(for: .normal)!
         let letter = Character(letterString.lowercased())
+        currentGame.playerGuessed(letter: letter)
+        updateUI()
     }
     
     func newRound () {
