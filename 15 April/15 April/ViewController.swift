@@ -14,6 +14,8 @@ class ViewController: UIViewController {
 
     var player: AVAudioPlayer?
     
+    var currentAnimalName = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -21,26 +23,31 @@ class ViewController: UIViewController {
 
     @IBAction func clickImgAnimal(_ sender: Any) {
         // Get name of image in Buton
+        playSound(animalName: currentAnimalName)
     }
     
     
     @IBAction func clickBtnCat(_ sender: Any) {
-        let image = UIImage(named: "cat")
+        currentAnimalName = "cat"
+        let image = UIImage(named: currentAnimalName)
         imgAnimal2.setImage(image, for: UIControl.State.normal)
     }
     
     @IBAction func clickBtnDog(_ sender: Any) {
-        let image = UIImage(named: "dog")
+        currentAnimalName = "dog"
+        let image = UIImage(named: currentAnimalName)
         imgAnimal2.setImage(image, for: UIControl.State.normal)
     }
     
     @IBAction func clickBtnHorse(_ sender: Any) {
-        let image = UIImage(named: "horse")
+        currentAnimalName = "horse"
+        let image = UIImage(named: currentAnimalName)
         imgAnimal2.setImage(image, for: UIControl.State.normal)
     }
     
     @IBAction func clickBtnWolf(_ sender: Any) {
-        let image = UIImage(named: "wolf")
+        currentAnimalName = "wolf"
+        let image = UIImage(named: currentAnimalName)
         imgAnimal2.setImage(image, for: UIControl.State.normal)
     }
     
