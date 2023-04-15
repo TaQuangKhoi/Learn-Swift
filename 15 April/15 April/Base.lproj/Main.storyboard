@@ -18,6 +18,9 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M74-Dh-HlP">
                                 <rect key="frame" x="123" y="370" width="183" height="187"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="M74-Dh-HlP" secondAttribute="height" multiplier="183:187" id="lNt-Zw-awW"/>
+                                </constraints>
                                 <state key="normal" title="imgBtnAnimal" image="beard"/>
                                 <connections>
                                     <action selector="clickImgAnimal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NCq-nV-gd7"/>
