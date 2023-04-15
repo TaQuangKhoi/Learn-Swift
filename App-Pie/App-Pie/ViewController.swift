@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     var totalWins = 0
     var totalLosses = 0
     
+    var currentGame: Game!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -28,10 +30,26 @@ class ViewController: UIViewController {
 
     @IBAction func letterButtonPressed(_ sender: UIButton) {
         sender.isEnabled = false
+        let letterString = sender.title(for: .normal)!
+        let letter = Character(letterString.lowercased())
     }
     
     func newRound () {
-        
+        let newWord = listOfWords.removeFirst()
+        currentGame = Game(
+            word: newWord,
+            incorrectMovesRemaining: incorrectMovesAllowed,
+            guessedLetters: []
+        )
+        updateUI()
+    }
+    
+    /**
+     * Update the UI,
+     */
+    func updateUI() {
+        scoreLabel.text = "Wins: \(totalWins), Losses: \(totalLosses)"
+        treeImgView.image = UIImage(named: "Tree \(currentGame.incorrectMovesRemaining)")
     }
     
 }
