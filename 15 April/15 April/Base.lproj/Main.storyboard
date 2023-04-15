@@ -16,37 +16,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M74-Dh-HlP">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M74-Dh-HlP">
                                 <rect key="frame" x="123" y="370" width="183" height="187"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="imgBtnAnimal" image="beard"/>
                                 <connections>
                                     <action selector="clickImgAnimal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NCq-nV-gd7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmQ-Vo-3wF">
-                                <rect key="frame" x="28" y="108" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmQ-Vo-3wF">
+                                <rect key="frame" x="28" y="45" width="30" height="30"/>
                                 <state key="normal" title="Cat"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dh7-lz-y9x">
-                                <rect key="frame" x="131" y="108" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dh7-lz-y9x">
+                                <rect key="frame" x="131" y="45" width="30" height="30"/>
                                 <state key="normal" title="Dog"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4Q-6i-MeP">
-                                <rect key="frame" x="248" y="108" width="41" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4Q-6i-MeP">
+                                <rect key="frame" x="248" y="45" width="41" height="30"/>
                                 <state key="normal" title="Horse"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Smm-Al-UI9">
-                                <rect key="frame" x="370" y="108" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Smm-Al-UI9">
+                                <rect key="frame" x="370" y="45" width="31" height="30"/>
                                 <state key="normal" title="Wolf"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="e4Q-6i-MeP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="1" id="4TJ-66-Idd"/>
+                            <constraint firstItem="e4Q-6i-MeP" firstAttribute="leading" secondItem="dh7-lz-y9x" secondAttribute="trailing" constant="87" id="5JI-sw-j2k"/>
+                            <constraint firstItem="Smm-Al-UI9" firstAttribute="leading" secondItem="e4Q-6i-MeP" secondAttribute="trailing" constant="81" id="Fzi-eu-sz9"/>
+                            <constraint firstItem="M74-Dh-HlP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="326" id="JAZ-HQ-Z5B"/>
+                            <constraint firstItem="dh7-lz-y9x" firstAttribute="leading" secondItem="lmQ-Vo-3wF" secondAttribute="trailing" constant="73" id="O3M-Ki-WCu"/>
+                            <constraint firstItem="M74-Dh-HlP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="PoH-J1-ysE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="M74-Dh-HlP" secondAttribute="bottom" constant="335" id="SHZ-P2-1IA"/>
+                            <constraint firstItem="dh7-lz-y9x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="1" id="hxI-QN-1EU"/>
+                            <constraint firstItem="lmQ-Vo-3wF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="1" id="l23-nv-h0a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="M74-Dh-HlP" secondAttribute="trailing" constant="122" id="nU8-CM-pIS"/>
+                            <constraint firstItem="Smm-Al-UI9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="1" id="o77-3D-ect"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="imgAnimal2" destination="M74-Dh-HlP" id="zE4-6L-Kjn"/>
