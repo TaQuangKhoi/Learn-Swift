@@ -17,60 +17,76 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DmE-ca-NVb">
-                                <rect key="frame" x="1" y="45" width="412" height="816"/>
+                                <rect key="frame" x="10" y="54" width="394" height="798"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vkl-ef-BLc">
-                                        <rect key="frame" x="180" y="0.0" width="52" height="108"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="105.5"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <state key="normal" title="Button"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                        <state key="normal" title="C"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cn8-9B-w77">
-                                        <rect key="frame" x="180" y="118" width="52" height="108"/>
+                                        <rect key="frame" x="10" y="115.5" width="374" height="105.5"/>
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <state key="normal" title="Button"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                        <state key="normal" title="D"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVp-c4-z6J">
-                                        <rect key="frame" x="180" y="236" width="52" height="108"/>
+                                        <rect key="frame" x="20" y="231" width="354" height="105.5"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <state key="normal" title="Button"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                        <state key="normal" title="E"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbr-wA-NDC">
-                                        <rect key="frame" x="180" y="354" width="52" height="108"/>
+                                        <rect key="frame" x="30" y="346.5" width="334" height="105"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <state key="normal" title="Button"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                        <state key="normal" title="F"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1F5-7N-Qiz">
-                                        <rect key="frame" x="180" y="472" width="52" height="108"/>
+                                        <rect key="frame" x="40" y="461.5" width="314" height="105.5"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <state key="normal" title="Button"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                        <state key="normal" title="G"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsd-cY-GiE">
-                                        <rect key="frame" x="180" y="590" width="52" height="108"/>
+                                        <rect key="frame" x="50" y="577" width="294" height="105.5"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <state key="normal" title="Button"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                        <state key="normal" title="A"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOl-Zc-Jdm">
-                                        <rect key="frame" x="180" y="708" width="52" height="108"/>
+                                        <rect key="frame" x="60" y="692.5" width="274" height="105.5"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                        <state key="normal" title="Button"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                        <state key="normal" title="B"/>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="tbr-wA-NDC" secondAttribute="trailing" constant="30" id="0T8-uc-TQi"/>
+                                    <constraint firstAttribute="trailing" secondItem="cn8-9B-w77" secondAttribute="trailing" constant="10" id="AFR-5L-3ml"/>
+                                    <constraint firstItem="Vkl-ef-BLc" firstAttribute="leading" secondItem="DmE-ca-NVb" secondAttribute="leading" id="AUR-CC-Rft"/>
+                                    <constraint firstItem="aOl-Zc-Jdm" firstAttribute="leading" secondItem="DmE-ca-NVb" secondAttribute="leading" constant="60" id="FSW-W1-6U6"/>
+                                    <constraint firstItem="AVp-c4-z6J" firstAttribute="leading" secondItem="DmE-ca-NVb" secondAttribute="leading" constant="20" id="K1o-IB-N5E"/>
+                                    <constraint firstItem="1F5-7N-Qiz" firstAttribute="leading" secondItem="DmE-ca-NVb" secondAttribute="leading" constant="40" id="Pfq-Um-xnu"/>
+                                    <constraint firstAttribute="trailing" secondItem="wsd-cY-GiE" secondAttribute="trailing" constant="50" id="Qhk-tZ-PcR"/>
+                                    <constraint firstAttribute="trailing" secondItem="aOl-Zc-Jdm" secondAttribute="trailing" constant="60" id="Yaj-fc-s1I"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vkl-ef-BLc" secondAttribute="trailing" id="Zcg-eE-KEH"/>
+                                    <constraint firstItem="tbr-wA-NDC" firstAttribute="leading" secondItem="DmE-ca-NVb" secondAttribute="leading" constant="30" id="c9F-3b-7er"/>
+                                    <constraint firstAttribute="trailing" secondItem="AVp-c4-z6J" secondAttribute="trailing" constant="20" id="gKv-cF-zHF"/>
+                                    <constraint firstItem="cn8-9B-w77" firstAttribute="leading" secondItem="DmE-ca-NVb" secondAttribute="leading" constant="10" id="l4p-Re-mxB"/>
+                                    <constraint firstAttribute="trailing" secondItem="1F5-7N-Qiz" secondAttribute="trailing" constant="40" id="u4N-h4-xxd"/>
+                                    <constraint firstItem="wsd-cY-GiE" firstAttribute="leading" secondItem="DmE-ca-NVb" secondAttribute="leading" constant="50" id="wem-AF-2Zh"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="DmE-ca-NVb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="1" id="13A-qf-PZ5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DmE-ca-NVb" secondAttribute="trailing" constant="1" id="NnB-vt-Is3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DmE-ca-NVb" secondAttribute="bottom" constant="1" id="hM8-bw-Pd0"/>
-                            <constraint firstItem="DmE-ca-NVb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="oQc-i5-dfb"/>
+                            <constraint firstItem="DmE-ca-NVb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="1Cc-Lz-lG5"/>
+                            <constraint firstItem="DmE-ca-NVb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="6ur-sf-cda"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DmE-ca-NVb" secondAttribute="bottom" constant="10" id="9dL-y9-7xp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DmE-ca-NVb" secondAttribute="trailing" constant="10" id="CXP-Ud-c6A"/>
                         </constraints>
                     </view>
                 </viewController>
