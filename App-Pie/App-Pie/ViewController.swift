@@ -45,13 +45,16 @@ class ViewController: UIViewController {
     }
     
     func newRound () {
-        let newWord = listOfWords.removeFirst()
-        currentGame = Game(
-            word: newWord,
-            incorrectMovesRemaining: incorrectMovesAllowed,
-            guessedLetters: []
-        )
-        updateUI()
+        if !listOfWords.isEmpty {
+            let newWord = listOfWords.removeFirst()
+            currentGame = Game(word: newWord,
+                               incorrectMovesRemaining: incorrectMovesAllowed,
+                               guessedLetters: [])
+            enableLetterButtons(true)
+            updateUI()
+        } else {
+            enableLetterButtons(false)
+        }
     }
     
     /**
