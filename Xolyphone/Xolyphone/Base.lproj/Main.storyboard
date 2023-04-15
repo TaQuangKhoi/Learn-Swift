@@ -1,24 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Xolyphone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vkl-ef-BLc">
+                                <rect key="frame" x="1" y="45" width="412" height="106.5"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cn8-9B-w77">
+                                <rect key="frame" x="10" y="161.5" width="394" height="107"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVp-c4-z6J">
+                                <rect key="frame" x="20" y="278.5" width="374" height="106.5"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbr-wA-NDC">
+                                <rect key="frame" x="30" y="395" width="354" height="107"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1F5-7N-Qiz">
+                                <rect key="frame" x="40" y="512" width="334" height="106.5"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsd-cY-GiE">
+                                <rect key="frame" x="50" y="628.5" width="314" height="107"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOl-Zc-Jdm">
+                                <rect key="frame" x="60" y="745.5" width="294" height="106.5"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cn8-9B-w77" firstAttribute="height" secondItem="Vkl-ef-BLc" secondAttribute="height" id="1fB-0z-LqG"/>
+                            <constraint firstItem="1F5-7N-Qiz" firstAttribute="height" secondItem="Vkl-ef-BLc" secondAttribute="height" id="4ZJ-ir-psU"/>
+                            <constraint firstItem="AVp-c4-z6J" firstAttribute="height" secondItem="Vkl-ef-BLc" secondAttribute="height" id="Ahp-BK-Jmr"/>
+                            <constraint firstItem="aOl-Zc-Jdm" firstAttribute="height" secondItem="Vkl-ef-BLc" secondAttribute="height" id="CYT-J4-VKN"/>
+                            <constraint firstItem="wsd-cY-GiE" firstAttribute="top" secondItem="1F5-7N-Qiz" secondAttribute="bottom" constant="10" id="DF0-Gx-rs7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vkl-ef-BLc" secondAttribute="trailing" constant="1" id="JCk-yE-nGJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1F5-7N-Qiz" secondAttribute="trailing" constant="40" id="LZp-od-Epi"/>
+                            <constraint firstItem="aOl-Zc-Jdm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="MBn-fr-c6Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aOl-Zc-Jdm" secondAttribute="trailing" constant="60" id="MbJ-n9-Iy9"/>
+                            <constraint firstItem="Vkl-ef-BLc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="MuE-6C-WT2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wsd-cY-GiE" secondAttribute="trailing" constant="50" id="NZt-iN-Aws"/>
+                            <constraint firstItem="tbr-wA-NDC" firstAttribute="top" secondItem="AVp-c4-z6J" secondAttribute="bottom" constant="10" id="Pck-zi-9Kg"/>
+                            <constraint firstItem="wsd-cY-GiE" firstAttribute="height" secondItem="Vkl-ef-BLc" secondAttribute="height" id="YSt-0y-yxX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aOl-Zc-Jdm" secondAttribute="bottom" constant="10" id="Z2E-mf-U0u"/>
+                            <constraint firstItem="1F5-7N-Qiz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Z4z-RW-PjY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AVp-c4-z6J" secondAttribute="trailing" constant="20" id="ZKz-CV-tkm"/>
+                            <constraint firstItem="tbr-wA-NDC" firstAttribute="height" secondItem="Vkl-ef-BLc" secondAttribute="height" id="af8-yT-smb"/>
+                            <constraint firstItem="Vkl-ef-BLc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="1" id="bOo-xf-bAj"/>
+                            <constraint firstItem="1F5-7N-Qiz" firstAttribute="top" secondItem="tbr-wA-NDC" secondAttribute="bottom" constant="10" id="bVd-PV-bKu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cn8-9B-w77" secondAttribute="trailing" constant="10" id="cOQ-kw-zYY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tbr-wA-NDC" secondAttribute="trailing" constant="30" id="gpr-hf-Epp"/>
+                            <constraint firstItem="AVp-c4-z6J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jDB-gl-Yhh"/>
+                            <constraint firstItem="wsd-cY-GiE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="lgs-VE-iz0"/>
+                            <constraint firstItem="tbr-wA-NDC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="psL-mz-eOr"/>
+                            <constraint firstItem="cn8-9B-w77" firstAttribute="top" secondItem="Vkl-ef-BLc" secondAttribute="bottom" constant="10" id="rWy-MG-64M"/>
+                            <constraint firstItem="cn8-9B-w77" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="uzV-hd-jhC"/>
+                            <constraint firstItem="aOl-Zc-Jdm" firstAttribute="top" secondItem="wsd-cY-GiE" secondAttribute="bottom" constant="10" id="vs1-kv-fSu"/>
+                            <constraint firstItem="AVp-c4-z6J" firstAttribute="top" secondItem="cn8-9B-w77" secondAttribute="bottom" constant="10" id="z7h-dv-bju"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="133.92857142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
