@@ -20,6 +20,9 @@
                                 <rect key="frame" x="123" y="370" width="183" height="187"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="imgBtnAnimal" image="beard"/>
+                                <connections>
+                                    <action selector="clickImgAnimal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NCq-nV-gd7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmQ-Vo-3wF">
                                 <rect key="frame" x="28" y="108" width="30" height="30"/>

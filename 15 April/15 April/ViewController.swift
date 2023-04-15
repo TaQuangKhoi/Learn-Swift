@@ -19,7 +19,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-//    @IBAction func clickBtnCat(_ sender: Any) {
+    @IBAction func clickImgAnimal(_ sender: Any) {
+    }
+    //    @IBAction func clickBtnCat(_ sender: Any) {
         
 //        if let image = UIImage(named: "cat") {
 //            imgAnimal.setImage(image, for: UIControl.State.normal)
