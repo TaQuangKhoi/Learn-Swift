@@ -28,6 +28,19 @@ class ViewController: UIViewController {
 //        }
 //    }
     
+    
+    @IBAction func clickBtnCat(_ sender: Any) {
+    }
+    
+    @IBAction func clickBtnDog(_ sender: Any) {
+    }
+    
+    @IBAction func clickBtnHorse(_ sender: Any) {
+    }
+    
+    @IBAction func clickBtnWolf(_ sender: Any) {
+    }
+    
     func playSound() {
         guard let path = Bundle.main.path(forResource: "cat", ofType:"wav") else {
             return }

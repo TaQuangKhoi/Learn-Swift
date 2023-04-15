@@ -29,18 +29,30 @@
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmQ-Vo-3wF">
                                 <rect key="frame" x="28" y="64" width="30" height="30"/>
                                 <state key="normal" title="Cat"/>
+                                <connections>
+                                    <action selector="clickBtnCat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pfl-IS-BWU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dh7-lz-y9x">
                                 <rect key="frame" x="131" y="64" width="30" height="30"/>
                                 <state key="normal" title="Dog"/>
+                                <connections>
+                                    <action selector="clickBtnDog:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hu7-hP-LKZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4Q-6i-MeP">
                                 <rect key="frame" x="248" y="64" width="41" height="30"/>
                                 <state key="normal" title="Horse"/>
+                                <connections>
+                                    <action selector="clickBtnHorse:" destination="BYZ-38-t0r" eventType="touchUpInside" id="21D-m2-WqX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Smm-Al-UI9">
                                 <rect key="frame" x="370" y="64" width="31" height="30"/>
                                 <state key="normal" title="Wolf"/>
+                                <connections>
+                                    <action selector="clickBtnWolf:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mbd-Fs-23v"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
