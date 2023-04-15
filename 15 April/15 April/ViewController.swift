@@ -20,13 +20,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func clickImgAnimal(_ sender: Any) {
+        // Get name of image in Buton
     }
-    //    @IBAction func clickBtnCat(_ sender: Any) {
-        
-//        if let image = UIImage(named: "cat") {
-//            imgAnimal.setImage(image, for: UIControl.State.normal)
-//        }
-//    }
     
     
     @IBAction func clickBtnCat(_ sender: Any) {
@@ -43,8 +38,8 @@ class ViewController: UIViewController {
     @IBAction func clickBtnWolf(_ sender: Any) {
     }
     
-    func playSound() {
-        guard let path = Bundle.main.path(forResource: "cat", ofType:"wav") else {
+    func playSound(animalName: String) {
+        guard let path = Bundle.main.path(forResource: animalName, ofType: "wav") else {
             return }
         let url = URL(fileURLWithPath: path)
 
