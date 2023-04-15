@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F34D8EF329EA81B200671F37 /* horse.wav in Resources */ = {isa = PBXBuildFile; fileRef = F34D8EF029EA81B100671F37 /* horse.wav */; };
+		F34D8EF429EA81B200671F37 /* dog.wav in Resources */ = {isa = PBXBuildFile; fileRef = F34D8EF129EA81B100671F37 /* dog.wav */; };
+		F34D8EF529EA81B200671F37 /* wolf.wav in Resources */ = {isa = PBXBuildFile; fileRef = F34D8EF229EA81B200671F37 /* wolf.wav */; };
 		F357C63429EA2BFB00D5EF70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357C63329EA2BFB00D5EF70 /* AppDelegate.swift */; };
 		F357C63629EA2BFB00D5EF70 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357C63529EA2BFB00D5EF70 /* SceneDelegate.swift */; };
 		F357C63829EA2BFB00D5EF70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357C63729EA2BFB00D5EF70 /* ViewController.swift */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F34D8EF029EA81B100671F37 /* horse.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = horse.wav; sourceTree = "<group>"; };
+		F34D8EF129EA81B100671F37 /* dog.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dog.wav; sourceTree = "<group>"; };
+		F34D8EF229EA81B200671F37 /* wolf.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wolf.wav; sourceTree = "<group>"; };
 		F357C63029EA2BFB00D5EF70 /* 15 April.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "15 April.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F357C63329EA2BFB00D5EF70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F357C63529EA2BFB00D5EF70 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +107,9 @@
 		F357C63229EA2BFB00D5EF70 /* 15 April */ = {
 			isa = PBXGroup;
 			children = (
+				F34D8EF129EA81B100671F37 /* dog.wav */,
+				F34D8EF029EA81B100671F37 /* horse.wav */,
+				F34D8EF229EA81B200671F37 /* wolf.wav */,
 				F357C63329EA2BFB00D5EF70 /* AppDelegate.swift */,
 				F357C63529EA2BFB00D5EF70 /* SceneDelegate.swift */,
 				F357C63729EA2BFB00D5EF70 /* ViewController.swift */,
@@ -237,6 +246,9 @@
 				F357C64029EA2BFF00D5EF70 /* LaunchScreen.storyboard in Resources */,
 				F357C63D29EA2BFF00D5EF70 /* Assets.xcassets in Resources */,
 				F357C63B29EA2BFB00D5EF70 /* Main.storyboard in Resources */,
+				F34D8EF429EA81B200671F37 /* dog.wav in Resources */,
+				F34D8EF329EA81B200671F37 /* horse.wav in Resources */,
+				F34D8EF529EA81B200671F37 /* wolf.wav in Resources */,
 				F357C66729EA3D5500D5EF70 /* cat.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
