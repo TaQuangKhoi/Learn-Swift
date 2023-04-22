@@ -80,22 +80,32 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kf9-jh-h32">
+                                <rect key="frame" x="184" y="468.5" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="goToWhiteView:" destination="v6e-L5-u3R" eventType="touchUpInside" id="7ZS-zO-0jl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gF1-Sf-RNh"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
                         <constraints>
                             <constraint firstItem="hE6-Wq-QQJ" firstAttribute="centerY" secondItem="0Xq-N9-laJ" secondAttribute="centerY" id="6Qt-EB-rj4"/>
                             <constraint firstItem="hE6-Wq-QQJ" firstAttribute="centerX" secondItem="0Xq-N9-laJ" secondAttribute="centerX" id="7Bp-Da-oyE"/>
+                            <constraint firstItem="kf9-jh-h32" firstAttribute="top" secondItem="hE6-Wq-QQJ" secondAttribute="bottom" constant="10" id="kBJ-m0-hDQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Purple" id="rF7-u8-aQY"/>
                     <connections>
+                        <outlet property="btnPerformSegue" destination="kf9-jh-h32" id="PwF-LQ-MZR"/>
                         <outlet property="lblPurple" destination="hE6-Wq-QQJ" id="0Wp-JT-KjR"/>
+                        <segue destination="bru-Ph-rBu" kind="show" identifier="purpleToYellowSegue" id="dtp-sI-QRd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sEq-c5-sZ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1787" y="852"/>
+            <point key="canvasLocation" x="2001" y="686"/>
         </scene>
         <!--Green View-->
         <scene sceneID="Sq6-e7-Xgm">
@@ -192,6 +202,9 @@
             <point key="canvasLocation" x="140.57971014492756" y="133.92857142857142"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="dtp-sI-QRd"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
