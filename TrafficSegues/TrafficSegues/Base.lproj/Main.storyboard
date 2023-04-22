@@ -31,7 +31,7 @@
                             <constraint firstItem="fMc-u9-fFd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uvW-7d-QD3"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="eZT-sC-Rfa"/>
+                    <navigationItem key="navigationItem" title="Red" id="eZT-sC-Rfa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -60,7 +60,7 @@
                             <constraint firstItem="uIj-Io-efH" firstAttribute="centerY" secondItem="CHy-nv-VJT" secondAttribute="centerY" id="rIs-v0-xof"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="k4L-t4-J5r"/>
+                    <navigationItem key="navigationItem" title="Green" id="k4L-t4-J5r"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6TT-G9-WFF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -89,7 +89,14 @@
                             <constraint firstItem="haC-l0-qfC" firstAttribute="centerY" secondItem="0ax-rE-qKz" secondAttribute="centerY" id="rJM-wR-hPy"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="9kJ-5q-fgf"/>
+                    <navigationItem key="navigationItem" title="Turn Off" id="9kJ-5q-fgf">
+                        <barButtonItem key="rightBarButtonItem" title="Pop" id="7mj-ED-lJa">
+                            <color key="tintColor" systemColor="linkColor"/>
+                            <connections>
+                                <segue destination="J24-06-TJc" kind="unwind" unwindAction="unwindToRedWithUnwindSegue:" id="BTB-IH-w0j"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4MC-Vq-t7g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="J24-06-TJc" userLabel="Exit" sceneMemberID="exit"/>
@@ -116,6 +123,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
