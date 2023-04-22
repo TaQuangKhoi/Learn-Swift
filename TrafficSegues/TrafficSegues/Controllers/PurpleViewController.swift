@@ -10,6 +10,7 @@ import UIKit
 class PurpleViewController: UIViewController {
     
     var name : String!
+    var count : Int = 0
 
     @IBOutlet weak var lblPurple: UILabel!
     @IBOutlet weak var btnPerformSegue: UIButton!
@@ -19,11 +20,27 @@ class PurpleViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         lblPurple.text = name
+        
+//        let timer = Timer.scheduledTimer(timeInterval: 1.0,
+//                                         target: self,
+//                                         selector: #selector(self.timerTick),
+//                                         userInfo: nil,
+//                                         repeats: true)
+        
+        
     }
     
 
     @IBAction func goToWhiteView(_ sender: Any) {
+        
+        
+        
         performSegue(withIdentifier: "purpleToYellowSegue" , sender: sender)
+    }
+    
+    func timerTick() {
+        count += 1
+        lblPurple.text = "\(count)"
     }
     
 
