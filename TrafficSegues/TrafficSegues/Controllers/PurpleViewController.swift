@@ -11,6 +11,7 @@ class PurpleViewController: UIViewController {
     
     var name : String!
     var count : Int = 0
+    var timer = Timer()
 
     @IBOutlet weak var lblPurple: UILabel!
     @IBOutlet weak var btnPerformSegue: UIButton!
@@ -21,11 +22,11 @@ class PurpleViewController: UIViewController {
         // Do any additional setup after loading the view.
         lblPurple.text = name
         
-//        let timer = Timer.scheduledTimer(timeInterval: 1.0,
-//                                         target: self,
-//                                         selector: #selector(self.timerTick),
-//                                         userInfo: nil,
-//                                         repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 1.0,
+                                         target: self,
+                                         selector: #selector(self.timerTick),
+                                         userInfo: nil,
+                                         repeats: true)
         
         
     }
@@ -38,9 +39,14 @@ class PurpleViewController: UIViewController {
         performSegue(withIdentifier: "purpleToYellowSegue" , sender: sender)
     }
     
-    func timerTick() {
+    @objc func timerTick() {
         count += 1
         lblPurple.text = "\(count)"
+        
+        if (count == 30) {
+            timer.invalidate()
+            performSegue(withIdentifier: "purpleToYellowSegue", sender: nil)
+        }
     }
     
 
