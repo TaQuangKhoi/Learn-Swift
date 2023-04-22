@@ -11,7 +11,7 @@
         <!--Red View-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Red View" id="BYZ-38-t0r" customClass="RedViewController" customModule="TrafficSegues" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Red View" id="BYZ-38-t0r" customClass="Red2ViewController" customModule="TrafficSegues" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,6 +46,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Red" id="eZT-sC-Rfa"/>
+                    <connections>
+                        <outlet property="textField" destination="eiK-mT-yVj" id="1nH-zr-vfD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="RYv-oH-5QC" userLabel="Exit" sceneMemberID="exit"/>
