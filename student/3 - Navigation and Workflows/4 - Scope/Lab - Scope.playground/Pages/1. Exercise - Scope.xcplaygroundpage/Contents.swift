@@ -8,7 +8,7 @@ for _ in 0..<10 {
     print("The value of foo is \(foo)")
 }
 //print("The value of foo is \(foo)")
-
+// The line above will make error because var foo is local scope of the for loop
 
 //:  Using a comment or print statement, describe why both print statements below compile when similar-looking code did not compile above. In what scope is `x` defined, and in what scope is it modified? In contrast, in what scope is `foo` defined and used?
 var x = 10
