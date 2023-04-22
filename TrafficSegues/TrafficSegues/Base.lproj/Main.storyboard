@@ -23,7 +23,7 @@
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="9sA-QM-BLH" kind="show" id="inY-qL-Wrc"/>
+                                    <segue destination="9sA-QM-BLH" kind="show" identifier="redToGreenSegue" id="inY-qL-Wrc"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eiK-mT-yVj">
@@ -64,7 +64,7 @@
                                 <rect key="frame" x="184" y="433" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="bru-Ph-rBu" kind="show" id="ZhC-3R-u8V"/>
+                                    <segue destination="bru-Ph-rBu" kind="show" identifier="greenToWhiteSegue" id="ZhC-3R-u8V"/>
                                 </connections>
                             </button>
                         </subviews>
