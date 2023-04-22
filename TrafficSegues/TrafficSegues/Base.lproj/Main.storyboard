@@ -70,6 +70,13 @@
                                     <segue destination="bru-Ph-rBu" kind="show" identifier="greenToWhiteSegue" id="ZhC-3R-u8V"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Krs-Rn-oU0">
+                                <rect key="frame" x="186" y="388" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="B2h-yA-LJe"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
@@ -79,6 +86,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Green" id="k4L-t4-J5r"/>
+                    <connections>
+                        <outlet property="labelWithTextFromPreviousController" destination="Krs-Rn-oU0" id="rsy-YT-Nat"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6TT-G9-WFF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
