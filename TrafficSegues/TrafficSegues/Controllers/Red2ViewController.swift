@@ -23,9 +23,20 @@ class Red2ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         segue.destination.navigationItem.title = textField.text
         
-        let greenViewController = segue.destination as! GreenViewController
+        if segue.identifier == "redToGreenSegue" {
+            let greenViewController = segue.destination as! GreenViewController
+            greenViewController.name = textField.text
+            
+            return
+        }
         
-        greenViewController.name = textField.text
+        if segue.identifier == "redToPurpleSegue" {
+            let purpleViewController = segue.destination as! PurpleViewController
+            purpleViewController.name = textField.text
+            
+            return
+        }
+        
     }
     
 
