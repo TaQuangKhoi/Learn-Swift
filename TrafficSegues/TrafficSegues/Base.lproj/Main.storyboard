@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="1050.7246376811595" y="133.92857142857142"/>
         </scene>
-        <!--View 2-->
+        <!--Green View-->
         <scene sceneID="Sq6-e7-Xgm">
             <objects>
-                <viewController title="View 2" id="9sA-QM-BLH" sceneMemberID="viewController">
+                <viewController title="Green View" id="9sA-QM-BLH" customClass="GreenViewController" customModule="TrafficSegues" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CHy-nv-VJT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
