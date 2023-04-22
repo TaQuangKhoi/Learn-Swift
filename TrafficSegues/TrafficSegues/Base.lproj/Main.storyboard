@@ -30,6 +30,9 @@
                                 <rect key="frame" x="5" y="389" width="404" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="txtField:" destination="RYv-oH-5QC" eventType="editingDidEnd" id="st5-0l-Af7"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -45,6 +48,7 @@
                     <navigationItem key="navigationItem" title="Red" id="eZT-sC-Rfa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="RYv-oH-5QC" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1050.7246376811595" y="133.92857142857142"/>
         </scene>
@@ -80,7 +84,7 @@
         <!--View 3-->
         <scene sceneID="u25-kr-8pa">
             <objects>
-                <viewController title="View 3" id="bru-Ph-rBu" sceneMemberID="viewController">
+                <viewController title="View 3" id="bru-Ph-rBu" customClass="WhiteViewController" customModule="TrafficSegues" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0ax-rE-qKz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

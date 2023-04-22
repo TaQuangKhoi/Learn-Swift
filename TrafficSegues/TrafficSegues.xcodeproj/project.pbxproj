@@ -14,6 +14,7 @@
 		F3692C3729F398E2005B9B7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3692C3629F398E2005B9B7D /* Assets.xcassets */; };
 		F3692C3A29F398E2005B9B7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3692C3829F398E2005B9B7D /* LaunchScreen.storyboard */; };
 		F3692C4729F3B8B3005B9B7D /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3692C4629F3B8B3005B9B7D /* GreenViewController.swift */; };
+		F3692C4A29F3BA51005B9B7D /* WhiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3692C4929F3BA51005B9B7D /* WhiteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F3692C3929F398E2005B9B7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3692C3B29F398E2005B9B7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3692C4629F3B8B3005B9B7D /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
+		F3692C4929F3BA51005B9B7D /* WhiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +63,6 @@
 				F3692C4429F3B82C005B9B7D /* Controllers */,
 				F3692C2D29F398DD005B9B7D /* AppDelegate.swift */,
 				F3692C2F29F398DD005B9B7D /* SceneDelegate.swift */,
-				F3692C3129F398DD005B9B7D /* RedViewController.swift */,
 				F3692C3329F398DD005B9B7D /* Main.storyboard */,
 				F3692C3629F398E2005B9B7D /* Assets.xcassets */,
 				F3692C3829F398E2005B9B7D /* LaunchScreen.storyboard */,
@@ -73,7 +74,9 @@
 		F3692C4429F3B82C005B9B7D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F3692C3129F398DD005B9B7D /* RedViewController.swift */,
 				F3692C4629F3B8B3005B9B7D /* GreenViewController.swift */,
+				F3692C4929F3BA51005B9B7D /* WhiteViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				F3692C4729F3B8B3005B9B7D /* GreenViewController.swift in Sources */,
 				F3692C3229F398DD005B9B7D /* RedViewController.swift in Sources */,
 				F3692C2E29F398DD005B9B7D /* AppDelegate.swift in Sources */,
+				F3692C4A29F3BA51005B9B7D /* WhiteViewController.swift in Sources */,
 				F3692C3029F398DD005B9B7D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,6 +14,10 @@ class RedViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+    }
+    
     @IBAction func unwindToRed(unwindSegue: UIStoryboardSegue) {
     
     }
