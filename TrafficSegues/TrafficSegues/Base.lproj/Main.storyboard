@@ -74,9 +74,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haC-l0-qfC">
-                                <rect key="frame" x="184" y="406" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haC-l0-qfC">
+                                <rect key="frame" x="184" y="433" width="46" height="30"/>
                                 <state key="normal" title="Dismis"/>
                                 <connections>
                                     <segue destination="J24-06-TJc" kind="unwind" unwindAction="unwindToRedWithUnwindSegue:" id="JeI-J3-jZ3"/>
@@ -85,6 +84,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="M1P-Vv-UQ9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="haC-l0-qfC" firstAttribute="centerX" secondItem="0ax-rE-qKz" secondAttribute="centerX" id="oO4-uE-fuQ"/>
+                            <constraint firstItem="haC-l0-qfC" firstAttribute="centerY" secondItem="0ax-rE-qKz" secondAttribute="centerY" id="rJM-wR-hPy"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9kJ-5q-fgf"/>
                 </viewController>
