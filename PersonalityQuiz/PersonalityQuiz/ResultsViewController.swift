@@ -54,11 +54,6 @@ class ResultsViewController: UIViewController {
         resultDefinitionLabel.text = mostCommonAnswer.definition
     }
     
-
-    @IBAction func unwindToQuizIntroduction(segue:
-    UIStoryboardSegue) {
-
-    }
     
     /*
     // MARK: - Navigation
