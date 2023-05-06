@@ -100,17 +100,44 @@
             </objects>
             <point key="canvasLocation" x="1863.7681159420292" y="105.80357142857143"/>
         </scene>
-        <!--View Controller-->
+        <!--Result-->
         <scene sceneID="BM0-Ba-yaE">
             <objects>
                 <viewController id="Sdg-Io-eGn" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9n6-Fz-N5v">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qoV-YI-4n5">
+                                <rect key="frame" x="20" y="381" width="374" height="80.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJP-qJ-ZiN">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1a-iK-V12">
+                                        <rect key="frame" x="0.0" y="60" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="2Gy-dZ-Twx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qoV-YI-4n5" firstAttribute="leading" secondItem="2Gy-dZ-Twx" secondAttribute="leading" constant="20" id="1n1-q3-hpq"/>
+                            <constraint firstItem="qoV-YI-4n5" firstAttribute="centerY" secondItem="9n6-Fz-N5v" secondAttribute="centerY" id="4op-DQ-13o"/>
+                            <constraint firstItem="2Gy-dZ-Twx" firstAttribute="trailing" secondItem="qoV-YI-4n5" secondAttribute="trailing" constant="20" id="bDs-oo-DXq"/>
+                            <constraint firstItem="qoV-YI-4n5" firstAttribute="centerX" secondItem="9n6-Fz-N5v" secondAttribute="centerX" id="g0A-1Z-X0R"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Q0A-VC-fmb"/>
+                    <navigationItem key="navigationItem" title="Result" id="Q0A-VC-fmb">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="APr-eH-fU4"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sE4-S7-oNC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
