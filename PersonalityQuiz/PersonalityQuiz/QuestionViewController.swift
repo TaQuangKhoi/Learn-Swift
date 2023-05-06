@@ -9,6 +9,8 @@ import UIKit
 
 class QuestionViewController: UIViewController {
     
+    var answersChosen: [Answer] = []
+    
     var questionIndex = 0
     
     var questions: [Question] = [
@@ -71,6 +73,10 @@ class QuestionViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         updateUI()
+    }
+    
+    @IBAction func singleAnswerButtonPressed(_ sender: UIButton) {
+        
     }
     
     func updateUI() {
