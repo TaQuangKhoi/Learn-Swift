@@ -138,7 +138,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fpV-m3-gXw">
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fpV-m3-gXw" userLabel="Switch 1">
                                                 <rect key="frame" x="325" y="0.0" width="51" height="31"/>
                                             </switch>
                                         </subviews>
@@ -152,7 +152,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Tc-9v-avI">
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Tc-9v-avI" userLabel="Switch 2">
                                                 <rect key="frame" x="325" y="0.0" width="51" height="31"/>
                                             </switch>
                                         </subviews>
@@ -166,7 +166,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7xz-bK-Pcc">
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7xz-bK-Pcc" userLabel="Switch 3">
                                                 <rect key="frame" x="325" y="0.0" width="51" height="31"/>
                                             </switch>
                                         </subviews>
@@ -180,7 +180,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CJg-XH-J6U">
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CJg-XH-J6U" userLabel="Switch 4">
                                                 <rect key="frame" x="325" y="0.0" width="51" height="31"/>
                                             </switch>
                                         </subviews>
@@ -188,6 +188,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SuN-FE-0iT">
                                         <rect key="frame" x="0.0" y="204" width="374" height="30"/>
                                         <state key="normal" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="multipleAnswerButtonPressed:" destination="VEe-jc-G2y" eventType="touchUpInside" id="SD3-bQ-McG"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -215,8 +218,11 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WeT-uG-vWe">
-                                        <rect key="frame" x="164" y="86.5" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="135" y="86.5" width="104" height="30"/>
+                                        <state key="normal" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="rangedAnswerButtonPressed:" destination="VEe-jc-G2y" eventType="touchUpInside" id="sDW-Rn-Wv4"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -264,18 +270,23 @@
                         <outlet property="multiLabel2" destination="AyY-nA-Z9v" id="wsQ-Rg-hlg"/>
                         <outlet property="multiLabel3" destination="hXx-UY-0QS" id="LGx-3d-ZZJ"/>
                         <outlet property="multiLabel4" destination="fIh-zb-0xb" id="J3E-WX-Sya"/>
+                        <outlet property="multiSwitch1" destination="fpV-m3-gXw" id="ONh-42-Dr1"/>
+                        <outlet property="multiSwitch2" destination="4Tc-9v-avI" id="ICn-US-v6R"/>
+                        <outlet property="multiSwitch3" destination="7xz-bK-Pcc" id="GMA-gt-3bZ"/>
+                        <outlet property="multiSwitch4" destination="CJg-XH-J6U" id="p1Z-o3-rRF"/>
                         <outlet property="multipleStackView" destination="ZnS-5e-kCl" id="v5P-GC-rD4"/>
                         <outlet property="questionLabel" destination="0sX-zs-mQZ" id="oHs-dO-82q"/>
                         <outlet property="questionProgressView" destination="Qso-ID-8hC" id="BBR-fn-N4P"/>
                         <outlet property="rangedLabel1" destination="jwB-zF-f82" id="DyK-kl-uzD"/>
                         <outlet property="rangedLabel2" destination="NZr-QQ-5lm" id="AZd-q8-Hef"/>
+                        <outlet property="rangedSlider" destination="np7-Ei-6dS" id="fPA-Em-xg7"/>
                         <outlet property="rangedStackView" destination="RlZ-SB-cvL" id="quR-yL-YUL"/>
                         <outlet property="singleButton1" destination="m6i-LZ-kvQ" id="kcZ-X9-02i"/>
                         <outlet property="singleButton2" destination="TyN-qW-b6w" id="Y3E-SQ-fki"/>
                         <outlet property="singleButton3" destination="M2o-P1-kgd" id="swk-La-5EH"/>
                         <outlet property="singleButton4" destination="6zH-ml-auW" id="lC2-Fr-W3q"/>
                         <outlet property="singleStackView" destination="Of4-oN-CEh" id="Uow-M9-dAb"/>
-                        <segue destination="Sdg-Io-eGn" kind="show" identifier="Results" id="eG7-wQ-Iej"/>
+                        <segue destination="Sdg-Io-eGn" kind="show" identifier="Results" destinationCreationSelector="showResults:" id="eG7-wQ-Iej"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KwO-oM-36u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
