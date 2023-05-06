@@ -15,8 +15,26 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which Animal Are You?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnL-cn-5Is">
+                                <rect key="frame" x="47.5" y="429" width="319" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1U3-C0-Hh1">
+                                <rect key="frame" x="130" y="477.5" width="154" height="30"/>
+                                <state key="normal" title="Begin Personality Quiz"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1U3-C0-Hh1" firstAttribute="top" secondItem="fnL-cn-5Is" secondAttribute="bottom" constant="10" id="J1g-l8-0tz"/>
+                            <constraint firstItem="1U3-C0-Hh1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PST-J9-kyR"/>
+                            <constraint firstItem="fnL-cn-5Is" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Py7-8M-ktX"/>
+                            <constraint firstItem="fnL-cn-5Is" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TPt-dG-H9d"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
