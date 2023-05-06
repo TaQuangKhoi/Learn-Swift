@@ -175,15 +175,53 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="RlZ-SB-cvL">
+                                <rect key="frame" x="20" y="363" width="374" height="116.5"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="np7-Ei-6dS">
+                                        <rect key="frame" x="-2" y="0.0" width="378" height="31"/>
+                                    </slider>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Er6-34-vfv">
+                                        <rect key="frame" x="0.0" y="48" width="374" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jwB-zF-f82">
+                                                <rect key="frame" x="0.0" y="0.0" width="302.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZr-QQ-5lm">
+                                                <rect key="frame" x="332.5" y="0.0" width="41.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WeT-uG-vWe">
+                                        <rect key="frame" x="164" y="86.5" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="np7-Ei-6dS" secondAttribute="trailing" id="ASj-lT-wb7"/>
+                                    <constraint firstItem="Er6-34-vfv" firstAttribute="leading" secondItem="RlZ-SB-cvL" secondAttribute="leading" id="LxE-Yk-nui"/>
+                                    <constraint firstAttribute="trailing" secondItem="Er6-34-vfv" secondAttribute="trailing" id="fKj-iw-xUR"/>
+                                    <constraint firstItem="np7-Ei-6dS" firstAttribute="leading" secondItem="RlZ-SB-cvL" secondAttribute="leading" id="v9a-mV-WEn"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1So-mG-6qb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="RlZ-SB-cvL" firstAttribute="centerY" secondItem="R9b-yM-xca" secondAttribute="centerY" id="Ikg-7N-AQI"/>
+                            <constraint firstItem="RlZ-SB-cvL" firstAttribute="leading" secondItem="1So-mG-6qb" secondAttribute="leading" constant="20" id="Ioe-32-6oa"/>
                             <constraint firstItem="Of4-oN-CEh" firstAttribute="centerY" secondItem="R9b-yM-xca" secondAttribute="centerY" id="NLR-rd-oyW"/>
                             <constraint firstItem="ZnS-5e-kCl" firstAttribute="centerX" secondItem="R9b-yM-xca" secondAttribute="centerX" id="XJA-0V-ZAo"/>
                             <constraint firstItem="1So-mG-6qb" firstAttribute="trailing" secondItem="Of4-oN-CEh" secondAttribute="trailing" constant="20" id="YG9-j4-VIs"/>
                             <constraint firstItem="ZnS-5e-kCl" firstAttribute="leading" secondItem="1So-mG-6qb" secondAttribute="leading" constant="20" id="YSN-c7-NvT"/>
                             <constraint firstItem="ZnS-5e-kCl" firstAttribute="centerY" secondItem="R9b-yM-xca" secondAttribute="centerY" id="f1l-DZ-dMd"/>
+                            <constraint firstItem="1So-mG-6qb" firstAttribute="trailing" secondItem="RlZ-SB-cvL" secondAttribute="trailing" constant="20" id="jVK-wV-xFK"/>
                             <constraint firstItem="Of4-oN-CEh" firstAttribute="centerX" secondItem="R9b-yM-xca" secondAttribute="centerX" id="lpo-z6-JC8"/>
                             <constraint firstItem="Of4-oN-CEh" firstAttribute="leading" secondItem="1So-mG-6qb" secondAttribute="leading" constant="20" id="puk-Bu-zEl"/>
                             <constraint firstItem="1So-mG-6qb" firstAttribute="trailing" secondItem="ZnS-5e-kCl" secondAttribute="trailing" constant="20" id="wve-F1-eif"/>
@@ -191,6 +229,7 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Of4-oN-CEh"/>
+                                <exclude reference="ZnS-5e-kCl"/>
                             </mask>
                         </variation>
                     </view>
