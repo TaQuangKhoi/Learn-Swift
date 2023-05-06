@@ -211,18 +211,24 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sX-zs-mQZ">
-                                <rect key="frame" x="20" y="76" width="374" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <rect key="frame" x="20" y="76" width="374" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Qso-ID-8hC">
+                                <rect key="frame" x="20" y="784" width="374" height="4"/>
+                            </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1So-mG-6qb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Qso-ID-8hC" firstAttribute="leading" secondItem="1So-mG-6qb" secondAttribute="leading" constant="20" id="9cm-tn-5KG"/>
+                            <constraint firstItem="1So-mG-6qb" firstAttribute="bottom" secondItem="Qso-ID-8hC" secondAttribute="bottom" constant="20" id="Ahm-dZ-hcw"/>
                             <constraint firstItem="RlZ-SB-cvL" firstAttribute="centerY" secondItem="R9b-yM-xca" secondAttribute="centerY" id="Ikg-7N-AQI"/>
                             <constraint firstItem="RlZ-SB-cvL" firstAttribute="leading" secondItem="1So-mG-6qb" secondAttribute="leading" constant="20" id="Ioe-32-6oa"/>
                             <constraint firstItem="Of4-oN-CEh" firstAttribute="centerY" secondItem="R9b-yM-xca" secondAttribute="centerY" id="NLR-rd-oyW"/>
+                            <constraint firstItem="1So-mG-6qb" firstAttribute="trailing" secondItem="Qso-ID-8hC" secondAttribute="trailing" constant="20" id="Uvj-0H-O6l"/>
                             <constraint firstItem="ZnS-5e-kCl" firstAttribute="centerX" secondItem="R9b-yM-xca" secondAttribute="centerX" id="XJA-0V-ZAo"/>
                             <constraint firstItem="1So-mG-6qb" firstAttribute="trailing" secondItem="Of4-oN-CEh" secondAttribute="trailing" constant="20" id="YG9-j4-VIs"/>
                             <constraint firstItem="ZnS-5e-kCl" firstAttribute="leading" secondItem="1So-mG-6qb" secondAttribute="leading" constant="20" id="YSN-c7-NvT"/>
