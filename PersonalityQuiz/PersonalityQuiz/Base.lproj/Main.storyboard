@@ -88,6 +88,9 @@
                         <viewLayoutGuide key="safeArea" id="1So-mG-6qb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <segue destination="Sdg-Io-eGn" kind="show" identifier="Results" id="eG7-wQ-Iej"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KwO-oM-36u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -98,11 +101,12 @@
             <objects>
                 <viewController id="Sdg-Io-eGn" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9n6-Fz-N5v">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="2Gy-dZ-Twx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Q0A-VC-fmb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sE4-S7-oNC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
