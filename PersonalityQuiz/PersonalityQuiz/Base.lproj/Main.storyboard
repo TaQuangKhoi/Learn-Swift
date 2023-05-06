@@ -210,6 +210,12 @@
                                     <constraint firstItem="np7-Ei-6dS" firstAttribute="leading" secondItem="RlZ-SB-cvL" secondAttribute="leading" id="v9a-mV-WEn"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sX-zs-mQZ">
+                                <rect key="frame" x="20" y="76" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1So-mG-6qb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -222,14 +228,18 @@
                             <constraint firstItem="ZnS-5e-kCl" firstAttribute="leading" secondItem="1So-mG-6qb" secondAttribute="leading" constant="20" id="YSN-c7-NvT"/>
                             <constraint firstItem="ZnS-5e-kCl" firstAttribute="centerY" secondItem="R9b-yM-xca" secondAttribute="centerY" id="f1l-DZ-dMd"/>
                             <constraint firstItem="1So-mG-6qb" firstAttribute="trailing" secondItem="RlZ-SB-cvL" secondAttribute="trailing" constant="20" id="jVK-wV-xFK"/>
+                            <constraint firstItem="1So-mG-6qb" firstAttribute="trailing" secondItem="0sX-zs-mQZ" secondAttribute="trailing" constant="20" id="kFF-Fz-Dvp"/>
                             <constraint firstItem="Of4-oN-CEh" firstAttribute="centerX" secondItem="R9b-yM-xca" secondAttribute="centerX" id="lpo-z6-JC8"/>
                             <constraint firstItem="Of4-oN-CEh" firstAttribute="leading" secondItem="1So-mG-6qb" secondAttribute="leading" constant="20" id="puk-Bu-zEl"/>
+                            <constraint firstItem="0sX-zs-mQZ" firstAttribute="top" secondItem="1So-mG-6qb" secondAttribute="top" constant="20" id="w6Z-3m-TNw"/>
                             <constraint firstItem="1So-mG-6qb" firstAttribute="trailing" secondItem="ZnS-5e-kCl" secondAttribute="trailing" constant="20" id="wve-F1-eif"/>
+                            <constraint firstItem="0sX-zs-mQZ" firstAttribute="leading" secondItem="1So-mG-6qb" secondAttribute="leading" constant="20" id="yWA-nv-KFr"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Of4-oN-CEh"/>
                                 <exclude reference="ZnS-5e-kCl"/>
+                                <exclude reference="RlZ-SB-cvL"/>
                             </mask>
                         </variation>
                     </view>
