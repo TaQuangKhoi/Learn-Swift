@@ -81,10 +81,10 @@
             </objects>
             <point key="canvasLocation" x="143" y="106"/>
         </scene>
-        <!--View Controller-->
+        <!--Question View Controller-->
         <scene sceneID="aCi-Fx-35c">
             <objects>
-                <viewController id="VEe-jc-G2y" sceneMemberID="viewController">
+                <viewController id="VEe-jc-G2y" customClass="QuestionViewController" customModule="PersonalityQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R9b-yM-xca">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,7 +103,7 @@
         <!--Result-->
         <scene sceneID="BM0-Ba-yaE">
             <objects>
-                <viewController id="Sdg-Io-eGn" sceneMemberID="viewController">
+                <viewController id="Sdg-Io-eGn" customClass="ResultsViewController" customModule="PersonalityQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9n6-Fz-N5v">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
