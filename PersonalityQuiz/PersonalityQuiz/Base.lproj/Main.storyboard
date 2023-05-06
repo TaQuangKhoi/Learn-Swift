@@ -73,6 +73,9 @@
                             <constraint firstItem="7TG-8V-cKE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xmv-FR-FNE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="qeF-yx-tlV" kind="show" id="jcd-Gh-Egi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -83,7 +86,7 @@
             <objects>
                 <viewController id="VEe-jc-G2y" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R9b-yM-xca">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="1So-mG-6qb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -102,7 +105,7 @@
             <objects>
                 <viewController id="Sdg-Io-eGn" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9n6-Fz-N5v">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="2Gy-dZ-Twx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -118,8 +121,9 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qeF-yx-tlV" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="PJc-iw-kfa"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Krx-Cc-3vY">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
