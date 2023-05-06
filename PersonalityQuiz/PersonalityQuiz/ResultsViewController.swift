@@ -34,8 +34,8 @@ class ResultsViewController: UIViewController {
 //      let frequencyOfAnswers = responses.reduce(into: [:]) {
 //        (counts, answer) in counts[answer.type, default: 0] += 1
 //      }
-        let frequencyOfAnswers = responses.reduce(into:
-           [AnimalType: Int]()) { (counts, answer) in
+        let frequencyOfAnswers = responses.reduce(into: [AnimalType: Int]()) {
+            (counts, answer) in
             if let existingCount = counts[answer.type] {
                 counts[answer.type] = existingCount + 1
             } else {
