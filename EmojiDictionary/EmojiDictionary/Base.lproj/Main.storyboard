@@ -71,18 +71,22 @@
                             <outlet property="delegate" destination="hHn-i2-ytH" id="TyC-93-RTM"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="QB0-2X-dkB">
+                    <navigationItem key="navigationItem" title="Emoji List" id="QB0-2X-dkB">
                         <barButtonItem key="leftBarButtonItem" systemItem="edit" id="eQc-KC-FMg">
                             <connections>
                                 <action selector="editButtonTapped:" destination="hHn-i2-ytH" id="wPk-6e-bvK"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="j2M-Mg-rzi"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="j2M-Mg-rzi">
+                            <connections>
+                                <segue destination="vtf-un-eW7" kind="show" identifier="EditSegue" id="Cfp-Uw-i4y"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WuN-tA-HA5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-127" y="38"/>
+            <point key="canvasLocation" x="-129" y="38"/>
         </scene>
         <!--Add Update Emoji Controller-->
         <scene sceneID="6l6-bb-XtS">
@@ -107,16 +111,17 @@
                             <outlet property="delegate" destination="W5W-jZ-beW" id="eKz-o5-Dmm"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="tML-z5-4Sx"/>
+                    <navigationItem key="navigationItem" title="Emoji Editor" id="tML-z5-4Sx"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XVR-lK-0Co" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1449" y="56"/>
+            <point key="canvasLocation" x="1778" y="38"/>
         </scene>
         <!--Add Edit Navigation Controller-->
         <scene sceneID="9g5-vM-V9i">
             <objects>
                 <navigationController id="vtf-un-eW7" userLabel="Add Edit Navigation Controller" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="7ba-CE-KwE"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3nx-zd-91w">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -127,7 +132,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vg1-he-7Sx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="599" y="56"/>
+            <point key="canvasLocation" x="991" y="38"/>
         </scene>
         <!--Emoji List Navigation Controller-->
         <scene sceneID="CBE-hF-hic">
