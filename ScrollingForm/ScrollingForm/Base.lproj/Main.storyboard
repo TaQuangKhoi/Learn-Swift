@@ -315,6 +315,9 @@
                             <constraint firstItem="IMY-IK-XRO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="xgG-QY-1Hw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="IMY-IK-XRO" id="cHf-aE-paR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
