@@ -72,21 +72,22 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="QB0-2X-dkB">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="eQc-KC-FMg">
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="eQc-KC-FMg">
                             <connections>
                                 <action selector="editButtonTapped:" destination="hHn-i2-ytH" id="wPk-6e-bvK"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="j2M-Mg-rzi"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WuN-tA-HA5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-127" y="38"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Add Update Emoji Controller-->
         <scene sceneID="6l6-bb-XtS">
             <objects>
-                <tableViewController id="W5W-jZ-beW" sceneMemberID="viewController">
+                <tableViewController id="W5W-jZ-beW" userLabel="Add Update Emoji Controller" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tF9-cK-9ZU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -112,10 +113,10 @@
             </objects>
             <point key="canvasLocation" x="1449" y="56"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Add Edit Navigation Controller-->
         <scene sceneID="9g5-vM-V9i">
             <objects>
-                <navigationController id="vtf-un-eW7" sceneMemberID="viewController">
+                <navigationController id="vtf-un-eW7" userLabel="Add Edit Navigation Controller" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3nx-zd-91w">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -128,10 +129,10 @@
             </objects>
             <point key="canvasLocation" x="599" y="56"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Emoji List Navigation Controller-->
         <scene sceneID="CBE-hF-hic">
             <objects>
-                <navigationController id="M12-yX-1iW" sceneMemberID="viewController">
+                <navigationController id="M12-yX-1iW" userLabel="Emoji List Navigation Controller" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dZC-RC-ClT">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
