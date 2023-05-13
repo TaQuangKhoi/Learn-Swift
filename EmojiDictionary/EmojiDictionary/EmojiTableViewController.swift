@@ -7,6 +7,13 @@
 
 import UIKit
 
+struct Emoji {
+    var symbol: String
+    var name: String
+    var description: String
+    var usage: String
+}
+
 class EmojiTableViewController: UITableViewController {
     
     var emojis: [Emoji] = [
@@ -51,20 +58,19 @@ class EmojiTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return emojis.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         //Step 1: Dequeue cell
-        let cell = tableView.dequeueReusableCell(withIdentifier:
-           "EmojiCell", for: indexPath) as! EmojiTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "EmojiCell", for: indexPath) as! EmojiTableViewCell
 
         //Step 2: Fetch model object to display
         let emoji = emojis[indexPath.row]
