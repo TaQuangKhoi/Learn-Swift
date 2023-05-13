@@ -204,7 +204,14 @@
                             <outlet property="delegate" destination="W5W-jZ-beW" id="eKz-o5-Dmm"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Emoji Editor" id="tML-z5-4Sx"/>
+                    <navigationItem key="navigationItem" title="Emoji Editor" id="tML-z5-4Sx">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="RYd-B9-mPF">
+                            <connections>
+                                <segue destination="wD7-mQ-dlC" kind="unwind" unwindAction="unwindToEmojiTable:" id="hRC-LR-Zp2"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="BRw-kA-94v"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="descriptionTextField" destination="ehb-Fx-Ijy" id="kqe-1v-z0D"/>
                         <outlet property="nameTextField" destination="K1Q-Cw-oQt" id="5lg-Ui-OoR"/>
@@ -213,6 +220,7 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XVR-lK-0Co" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="wD7-mQ-dlC" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1776.8115942028987" y="37.5"/>
         </scene>
