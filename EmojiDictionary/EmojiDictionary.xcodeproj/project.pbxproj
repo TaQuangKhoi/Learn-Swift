@@ -16,6 +16,7 @@
 		F370EA052A0F237800A3000A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F370EA032A0F237800A3000A /* LaunchScreen.storyboard */; };
 		F370EA0F2A0F290200A3000A /* EmojiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370EA0E2A0F290200A3000A /* EmojiTableViewController.swift */; };
 		F370EA122A0F2C3900A3000A /* EmojiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370EA112A0F2C3900A3000A /* EmojiTableViewCell.swift */; };
+		F370EA152A0F2E7E00A3000A /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370EA142A0F2E7E00A3000A /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F370EA062A0F237800A3000A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F370EA0E2A0F290200A3000A /* EmojiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewController.swift; sourceTree = "<group>"; };
 		F370EA112A0F2C3900A3000A /* EmojiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewCell.swift; sourceTree = "<group>"; };
+		F370EA142A0F2E7E00A3000A /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				F370E9F92A0F237300A3000A /* ViewController.swift */,
 				F370E9FB2A0F237300A3000A /* Main.storyboard */,
 				F370EA112A0F2C3900A3000A /* EmojiTableViewCell.swift */,
+				F370EA142A0F2E7E00A3000A /* File.swift */,
 				F370EA0E2A0F290200A3000A /* EmojiTableViewController.swift */,
 				F370EA012A0F237800A3000A /* Assets.xcassets */,
 				F370EA032A0F237800A3000A /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 			files = (
 				F370E9FA2A0F237300A3000A /* ViewController.swift in Sources */,
 				F370E9F62A0F237300A3000A /* AppDelegate.swift in Sources */,
+				F370EA152A0F2E7E00A3000A /* File.swift in Sources */,
 				F370EA002A0F237400A3000A /* EmojiDictionary.xcdatamodeld in Sources */,
 				F370E9F82A0F237300A3000A /* SceneDelegate.swift in Sources */,
 				F370EA122A0F2C3900A3000A /* EmojiTableViewCell.swift in Sources */,

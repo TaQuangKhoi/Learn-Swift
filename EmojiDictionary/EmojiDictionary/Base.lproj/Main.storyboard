@@ -62,7 +62,7 @@
                                 <connections>
                                     <outlet property="descriptionLabel" destination="w3L-g2-PCp" id="D9s-Xg-Aud"/>
                                     <outlet property="nameLabel" destination="AGO-EM-Y7d" id="gzw-Q8-iEo"/>
-                                    <outlet property="symbolLabel" destination="R2Q-Fo-H1B" id="3yt-fN-5pQ"/>
+                                    <outlet property="symbolLabel" destination="jUQ-yj-oyk" id="4mI-3V-Fu9"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
