@@ -207,12 +207,12 @@
                     <navigationItem key="navigationItem" title="Emoji Editor" id="tML-z5-4Sx">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="RYd-B9-mPF">
                             <connections>
-                                <segue destination="wD7-mQ-dlC" kind="unwind" unwindAction="unwindToEmojiTable:" id="hRC-LR-Zp2"/>
+                                <segue destination="wD7-mQ-dlC" kind="unwind" identifier="cancelUnwind" unwindAction="unwindToEmojiTable:" id="afT-WE-CaH"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="BRw-kA-94v">
                             <connections>
-                                <segue destination="wD7-mQ-dlC" kind="unwind" unwindAction="unwindToEmojiTable:" id="bx5-3D-S8Y"/>
+                                <segue destination="wD7-mQ-dlC" kind="unwind" identifier="saveUnwind" unwindAction="unwindToEmojiTable:" id="lgD-Rs-ImM"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
