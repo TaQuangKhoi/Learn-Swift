@@ -51,7 +51,8 @@ class EmojiTableViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+//         self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.navigationItem.leftBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
@@ -84,6 +85,12 @@ class EmojiTableViewController: UITableViewController {
         
     }
     
+    @IBAction func editButtonTapped(_ sender: UIBarButtonItem) {
+        let tableViewEditingMode = tableView.isEditing
+    
+        tableView.setEditing(!tableViewEditingMode, animated: true)
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -105,12 +112,14 @@ class EmojiTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
+        let movedEmoji = emojis.remove(at: fromIndexPath.row)
+        
+        emojis.insert(movedEmoji, at: to.row)
     }
-    */
+    
 
     /*
     // Override to support conditional rearranging of the table view.
