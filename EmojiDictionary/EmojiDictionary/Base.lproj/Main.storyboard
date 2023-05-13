@@ -63,7 +63,7 @@
                                     <outlet property="descriptionLabel" destination="w3L-g2-PCp" id="D9s-Xg-Aud"/>
                                     <outlet property="nameLabel" destination="AGO-EM-Y7d" id="gzw-Q8-iEo"/>
                                     <outlet property="symbolLabel" destination="jUQ-yj-oyk" id="4mI-3V-Fu9"/>
-                                    <segue destination="vtf-un-eW7" kind="show" identifier="Update" id="3H6-7b-bna"/>
+                                    <segue destination="vtf-un-eW7" kind="show" identifier="UpdateEmojiSegue" id="3H6-7b-bna"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -128,7 +128,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="W5W-jZ-beW" kind="relationship" relationship="rootViewController" id="Opp-Xj-6px"/>
+                        <segue destination="W5W-jZ-beW" kind="relationship" relationship="rootViewController" destinationCreationSelector="addEditEmoji:sender:" id="Opp-Xj-6px"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vg1-he-7Sx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

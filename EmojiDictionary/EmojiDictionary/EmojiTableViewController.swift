@@ -44,6 +44,8 @@ class EmojiTableViewController: UITableViewController {
        Emoji(symbol: "🏁", name: "Checkered Flag", description: "A black-and-white checkered flag.", usage: "completion")
     ]
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -54,7 +56,21 @@ class EmojiTableViewController: UITableViewController {
 //         self.navigationItem.rightBarButtonItem = self.editButtonItem
         self.navigationItem.leftBarButtonItem = self.editButtonItem
     }
-
+    
+    @IBSegueAction func addEditEmoji(_ coder: NSCoder, sender: Any?) -> UITableViewController? {
+        if let cell = sender as? UITableViewCell,
+           let indexPath = tableView.indexPath(for: cell) {
+            // Editing Emoji
+            let emojiToEdit = emojis[indexPath.row]
+            return AddEditEmojiTableViewController(coder: coder,
+               emoji: emojiToEdit)
+        } else {
+            // Adding Emoji
+            return AddEditEmojiTableViewController(coder: coder,
+               emoji: nil)
+        }
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
