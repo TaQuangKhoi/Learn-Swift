@@ -59,15 +59,25 @@ class EmojiTableViewController: UITableViewController {
         return 0
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        
+        //Step 1: Dequeue cell
+        let cell = tableView.dequeueReusableCell(withIdentifier:
+           "EmojiCell", for: indexPath) as! EmojiTableViewCell
 
-        // Configure the cell...
+        //Step 2: Fetch model object to display
+        let emoji = emojis[indexPath.row]
 
+        //Step 3: Configure cell
+        cell.update(with: emoji)
+        cell.showsReorderControl = true
+
+        //Step 4: Return cell
         return cell
+        
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
