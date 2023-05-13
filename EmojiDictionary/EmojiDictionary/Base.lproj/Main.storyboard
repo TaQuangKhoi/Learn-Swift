@@ -63,6 +63,7 @@
                                     <outlet property="descriptionLabel" destination="w3L-g2-PCp" id="D9s-Xg-Aud"/>
                                     <outlet property="nameLabel" destination="AGO-EM-Y7d" id="gzw-Q8-iEo"/>
                                     <outlet property="symbolLabel" destination="jUQ-yj-oyk" id="4mI-3V-Fu9"/>
+                                    <segue destination="vtf-un-eW7" kind="show" identifier="Update" id="3H6-7b-bna"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -79,7 +80,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="j2M-Mg-rzi">
                             <connections>
-                                <segue destination="vtf-un-eW7" kind="show" identifier="EditSegue" id="Cfp-Uw-i4y"/>
+                                <segue destination="vtf-un-eW7" kind="show" identifier="NewEmojiSegue" id="Cfp-Uw-i4y"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -151,6 +152,9 @@
             <point key="canvasLocation" x="-1017" y="38"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="3H6-7b-bna"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
