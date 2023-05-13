@@ -210,7 +210,11 @@
                                 <segue destination="wD7-mQ-dlC" kind="unwind" unwindAction="unwindToEmojiTable:" id="hRC-LR-Zp2"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="BRw-kA-94v"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="BRw-kA-94v">
+                            <connections>
+                                <segue destination="wD7-mQ-dlC" kind="unwind" unwindAction="unwindToEmojiTable:" id="bx5-3D-S8Y"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="descriptionTextField" destination="ehb-Fx-Ijy" id="kqe-1v-z0D"/>
