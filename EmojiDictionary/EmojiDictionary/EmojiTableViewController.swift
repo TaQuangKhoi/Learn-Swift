@@ -159,5 +159,18 @@ class EmojiTableViewController: UITableViewController {
     @IBAction func unwindToEmojiTable(_ unwindSegue: UIStoryboardSegue) {
 //        let sourceViewController = unwindSegue.source
         // Use data from the view controller which initiated the unwind segue
+        guard unwindSegue.identifier == "saveUnwind",
+                let sourceViewController = unwindSegue.source
+                   as? AddEditEmojiTableViewController,
+                let emoji = sourceViewController.emoji else { return }
+        
+            if let selectedIndexPath = tableView.indexPathForSelectedRow {
+                emojis[selectedIndexPath.row] = emoji
+                tableView.reloadRows(at: [selectedIndexPath], with: .none)
+            } else {
+                let newIndexPath = IndexPath(row: emojis.count, section: 0)
+                emojis.append(emoji)
+                tableView.insertRows(at: [newIndexPath], with: .automatic)
+            }
     }
 }
