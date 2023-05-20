@@ -95,12 +95,16 @@ class Screen3ViewController: UIViewController {
     
     @objc func timerTick() {
         count += 1
-        timerLabel.text = "\(count)"
         
-        if (count == speedMode?.timePerQuestion) {
-//            timer.invalidate()
-//            performSegue(withIdentifier: "purpleToYellowSegue", sender: nil)
-            nextQuestionFunc()
+        
+        if let timePerQuestion = speedMode?.timePerQuestion {
+            if count > timePerQuestion {
+    //            timer.invalidate()
+    //            performSegue(withIdentifier: "purpleToYellowSegue", sender: nil)
+                nextQuestionFunc()
+            } else {
+                timerLabel.text = "\(count)"
+            }
         }
     }
     
