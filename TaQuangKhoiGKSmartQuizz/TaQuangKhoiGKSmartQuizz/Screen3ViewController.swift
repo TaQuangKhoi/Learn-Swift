@@ -114,7 +114,7 @@ class Screen3ViewController: UIViewController {
         var countTimes = 10
         
         for _ in 1...countTimes {
-            let index = Int.random(in: 1...countArray)
+            let index = Int.random(in: 1..<countArray)
             if indexUsed.contains(index) {
                 countTimes+=1
             } else {

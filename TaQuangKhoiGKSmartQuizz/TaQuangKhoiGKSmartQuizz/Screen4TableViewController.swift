@@ -11,8 +11,16 @@ class Screen4TableViewController: UITableViewController {
     
     var result: Result?
 
+    @IBOutlet weak var speedValue: UILabel!
+    @IBOutlet weak var totalAnsweredQuestions: UILabel!
+    @IBOutlet weak var totalRightAnswer: UILabel!
+    @IBOutlet weak var ratingValue: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        updateUI()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -22,7 +30,18 @@ class Screen4TableViewController: UITableViewController {
     }
     
     func updateUI() {
+//        speedValue.text = result?.testType.
+        if let answeredQuestion = result?.answeredQuestion {
+            totalAnsweredQuestions.text = String(answeredQuestion)
+        }
         
+        if let rightQuestions = result?.rightQuestions {
+            totalRightAnswer.text = String(rightQuestions)
+        }
+        
+        if let rating = result?.rating {
+            ratingValue.text = String(rating)
+        }
     }
 
     // MARK: - Table view data source
