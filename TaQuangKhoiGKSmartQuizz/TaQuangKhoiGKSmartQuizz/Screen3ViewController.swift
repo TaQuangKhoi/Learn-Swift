@@ -52,6 +52,8 @@ class Screen3ViewController: UIViewController {
     
     @IBOutlet weak var questionLabel: UILabel!
     
+    @IBOutlet weak var timerLabel: UILabel!
+    
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var button3: UIButton!
@@ -61,17 +63,39 @@ class Screen3ViewController: UIViewController {
     
     @IBOutlet weak var answerLabel: UILabel!
     var speedMode: TestTypeDetail?
+    
+    var count:Int = 0
+    var timer = Timer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        timer = Timer.scheduledTimer(timeInterval: 1.0,
+                                     target: self,
+                                     selector: #selector(self.timerTick),
+                                     userInfo: nil,
+                                     repeats: true)
         
         nextButton.isEnabled = false
         
         get10Question()
         
         updateUI()
+        
+        
 
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func timerTick() {
+        count += 1
+        timerLabel.text = "\(count)"
+        
+        if (count == 10) {
+            timer.invalidate()
+//            performSegue(withIdentifier: "purpleToYellowSegue", sender: nil)
+            nextQuestion()
+        }
     }
     
     func get10Question() {
