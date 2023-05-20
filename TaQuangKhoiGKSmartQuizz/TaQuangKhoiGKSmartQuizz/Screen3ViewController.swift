@@ -22,7 +22,7 @@ class Screen3ViewController: UIViewController {
                  result: 2, image: "😀"),
         Question(text:"8+9",answers: ["A", "B", "C", "D"],
                  result: 2, image: "😀"),
-        Question(text:"11+2",answers: ["A", "B", "C", "D"],
+        Question(text:"11+2",answers: ["A", "12", "13", "D"],
                  result: 2, image: "😀"),
         Question(text:"12+5",answers: ["A", "B", "C", "D"],
                  result: 2, image: "😀"),
@@ -50,7 +50,7 @@ class Screen3ViewController: UIViewController {
     
     var currentQuestionIndex = 0
     
-    var currentQuestionAnswer = 0
+    var currentQuestionAnswer = 4
     
     @IBOutlet weak var questionLabel: UILabel!
     
@@ -74,7 +74,9 @@ class Screen3ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        result = Result(testType: speedMode?.name, answeredQuestion: 0, rightQuestions: 0, rating:0)
+        let mode = speedMode?.name
+        
+        result = Result(testType: mode, answeredQuestion: 0, rightQuestions: 0, rating: 0)
         
         timer = Timer.scheduledTimer(timeInterval: 1.0,
                                      target: self,
@@ -87,8 +89,6 @@ class Screen3ViewController: UIViewController {
         get10Question()
         
         updateUI()
-        
-        
 
         // Do any additional setup after loading the view.
     }
@@ -114,7 +114,7 @@ class Screen3ViewController: UIViewController {
         var countTimes = 10
         
         for _ in 1...countTimes {
-            let index = Int.random(in: 1..<countArray)
+            let index = Int.random(in: 1...countArray)
             if indexUsed.contains(index) {
                 countTimes+=1
             } else {
@@ -158,7 +158,16 @@ class Screen3ViewController: UIViewController {
     }
 
     @IBAction func nextQuestion(_ sender: Any) {
+        if currentQuestionAnswer != 4 {
+            result?.answeredQuestion += 1
+        }
         nextQuestionFunc()
+    }
+    
+    func checkAnswer() {
+        if currentQuestionAnswer == currentQuestions[currentQuestionIndex].result {
+            result?.rightQuestions += 1
+        }
     }
     
     func updateUI() {
@@ -179,6 +188,7 @@ class Screen3ViewController: UIViewController {
     
     func nextQuestionFunc() {
         currentQuestionIndex += 1
+        currentQuestionAnswer = 4
         count = 0
         
         if currentQuestionIndex < currentQuestions.count {
@@ -188,6 +198,19 @@ class Screen3ViewController: UIViewController {
             performSegue(withIdentifier: "ResultSegue", sender: nil)
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "ResultSegue" {
+            let screen4ViewController = segue.destination as! Screen4TableViewController
+            
+            screen4ViewController.result = self.result
+            
+            return
+        }
+    }
+    
+    
     /*
     // MARK: - Navigation
 
