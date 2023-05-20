@@ -100,18 +100,23 @@ class Screen3ViewController: UIViewController {
         switch sender {
         case button1:
             currentQuestionAnswer = 0
-            answerLabel.text = currentQuestions[currentQuestionIndex].answers[currentQuestionAnswer]
+//            answerLabel.text = currentQuestions[currentQuestionIndex].answers[currentQuestionAnswer]
+            resetAnswerTest()
+            button1.setTitle("✅ \(currentQuestions[currentQuestionIndex].answers[currentQuestionAnswer])", for: .normal)
 //            answersChosen.append(currentAnswers[0])
         case button2:
             currentQuestionAnswer = 1
+            resetAnswerTest()
             answerLabel.text = currentQuestions[currentQuestionIndex].answers[currentQuestionAnswer]
 //            answersChosen.append(currentAnswers[1])
         case button3:
             currentQuestionAnswer = 2
+            resetAnswerTest()
             answerLabel.text = currentQuestions[currentQuestionIndex].answers[currentQuestionAnswer]
 //            answersChosen.append(currentAnswers[2])
         case button4:
             currentQuestionAnswer = 3
+            resetAnswerTest()
             answerLabel.text = currentQuestions[currentQuestionIndex].answers[currentQuestionAnswer]
 //            answersChosen.append(currentAnswers[3])
         default:
@@ -121,6 +126,13 @@ class Screen3ViewController: UIViewController {
         nextButton.isEnabled = true
     
 //        nextQuestion()
+    }
+    
+    func resetAnswerTest() {
+        button1.setTitle(currentQuestions[currentQuestionIndex].answers[0], for: .normal)
+        button2.setTitle(currentQuestions[currentQuestionIndex].answers[1], for: .normal)
+        button3.setTitle(currentQuestions[currentQuestionIndex].answers[2], for: .normal)
+        button4.setTitle(currentQuestions[currentQuestionIndex].answers[3], for: .normal)
     }
 
     @IBAction func nextQuestion(_ sender: Any) {
