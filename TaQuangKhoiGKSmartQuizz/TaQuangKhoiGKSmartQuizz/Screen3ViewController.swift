@@ -48,6 +48,8 @@ class Screen3ViewController: UIViewController {
     
     var currentQuestionIndex = 0
     
+    var currentQuestionAnswer = 0
+    
     @IBOutlet weak var questionLabel: UILabel!
     
     @IBOutlet weak var button1: UIButton!
@@ -97,26 +99,32 @@ class Screen3ViewController: UIViewController {
         
         switch sender {
         case button1:
-            answerLabel.text = "Text"
+            currentQuestionAnswer = 0
+            answerLabel.text = currentQuestions[currentQuestionIndex].answers[currentQuestionAnswer]
 //            answersChosen.append(currentAnswers[0])
         case button2:
-            answerLabel.text = "Text"
+            currentQuestionAnswer = 1
+            answerLabel.text = currentQuestions[currentQuestionIndex].answers[currentQuestionAnswer]
 //            answersChosen.append(currentAnswers[1])
         case button3:
-            answerLabel.text = "Text"
+            currentQuestionAnswer = 2
+            answerLabel.text = currentQuestions[currentQuestionIndex].answers[currentQuestionAnswer]
 //            answersChosen.append(currentAnswers[2])
         case button4:
-            answerLabel.text = "Text"
+            currentQuestionAnswer = 3
+            answerLabel.text = currentQuestions[currentQuestionIndex].answers[currentQuestionAnswer]
 //            answersChosen.append(currentAnswers[3])
         default:
             break
         }
+        
+        nextButton.isEnabled = true
     
-        nextQuestion()
+//        nextQuestion()
     }
 
     @IBAction func nextQuestion(_ sender: Any) {
-        
+        nextQuestion()
     }
     
     func updateUI() {
