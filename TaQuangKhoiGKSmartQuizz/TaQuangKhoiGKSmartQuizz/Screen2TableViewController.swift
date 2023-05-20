@@ -8,6 +8,8 @@
 import UIKit
 
 class Screen2TableViewController: UITableViewController {
+    
+    var speedMode: TestTypeDetail?
 
     override func viewDidLoad() {
         super.viewDidLoad()
