@@ -187,12 +187,13 @@ class Screen3ViewController: UIViewController {
     }
     
     func nextQuestionFunc() {
-        checkAnswer()
+        
         currentQuestionIndex += 1
         currentQuestionAnswer = 4
         count = 0
         
         if currentQuestionIndex < currentQuestions.count {
+            checkAnswer()
             updateUI()
         }
         else {
