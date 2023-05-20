@@ -12,37 +12,39 @@ class Screen3ViewController: UIViewController {
     var questionBank: [Question] = [
         Question(text: "1 + 3", answers: ["1", "2", "3", "4"],
                  result: 4, image: "😀"),
-        Question(text:"Ai hat hat hay nhat lop",answers: ["A", "B", "C", "D"],
+        Question(text:"2+3",answers: ["A", "B", "C", "D"],
                  result: 2, image: "😀"),
-        Question(text:"Ai hat hat hay nhat lop",answers: ["A", "B", "C", "D"],
+        Question(text:"3+5",answers: ["A", "B", "C", "D"],
                  result: 2, image: "😀"),
-        Question(text:"Ai hat hat hay nhat lop",answers: ["A", "B", "C", "D"],
+        Question(text:"5+3",answers: ["A", "B", "C", "D"],
                  result: 2, image: "😀"),
-        Question(text:"Ai hat hat hay nhat lop",answers: ["A", "B", "C", "D"],
+        Question(text:"4+7",answers: ["A", "B", "C", "D"],
                  result: 2, image: "😀"),
-        Question(text:"Ai hat hat hay nhat lop",answers: ["A", "B", "C", "D"],
+        Question(text:"8+9",answers: ["A", "B", "C", "D"],
                  result: 2, image: "😀"),
-        Question(text:"Ai hat hat hay nhat lop",answers: ["A", "B", "C", "D"],
+        Question(text:"11+2",answers: ["A", "B", "C", "D"],
                  result: 2, image: "😀"),
-        Question(text:"Ai hat hat hay nhat lop",answers: ["A", "B", "C", "D"],
+        Question(text:"12+5",answers: ["A", "B", "C", "D"],
                  result: 2, image: "😀"),
-        Question(text:"Ai hat hat hay nhat lop",answers: ["A", "B", "C", "D"],
+        Question(text:"10+5",answers: ["A", "B", "C", "D"],
                  result: 2, image: "😀"),
-        Question(text:"Ai hat hat hay nhat lop",answers: ["A", "B", "C", "D"],
+        Question(text:"5+6",answers: ["A", "B", "C", "D"],
                  result: 2, image: "😀"),
-        Question(text:"Ai hat hat hay nhat lop",answers: ["A", "B", "C", "D"],
+        Question(text:"7+9",answers: ["A", "B", "C", "D"],
                  result: 2, image: "😀"),
-        Question(text:"Ai hat hat hay nhat lop",answers: ["A", "B", "C", "D"],
+        Question(text:"6+8",answers: ["A", "B", "C", "D"],
                  result: 2, image: "😀"),
-        Question(text:"Ai hat hat hay nhat lop",answers: ["A", "B", "C", "D"],
+        Question(text:"7+10",answers: ["A", "B", "C", "D"],
                  result: 2, image: "😀"),
-        Question(text:"Ai hat hat hay nhat lop",answers: ["A", "B", "C", "D"],
+        Question(text:"5+7",answers: ["A", "B", "C", "D"],
                  result: 2, image: "😀"),
-        Question(text:"Ai hat hat hay nhat lop",answers: ["A", "B", "C", "D"],
+        Question(text:"14+15",answers: ["A", "B", "C", "D"],
                  result: 2, image: "😀"),
-        Question(text:"Ai hat hat hay nhat lop",answers: ["A", "B", "C", "D"],
+        Question(text:"17+5",answers: ["A", "B", "C", "D"],
                  result: 2, image: "😀"),
     ]
+    
+    
     
     var currentQuestions: [Question] = []
     
@@ -66,9 +68,13 @@ class Screen3ViewController: UIViewController {
     
     var count:Int = 0
     var timer = Timer()
+    
+    var result: Result?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        result = Result(testType: speedMode?.name, answeredQuestion: 0, rightQuestions: 0, rating:0)
         
         timer = Timer.scheduledTimer(timeInterval: 1.0,
                                      target: self,
@@ -94,7 +100,7 @@ class Screen3ViewController: UIViewController {
         if (count == 10) {
             timer.invalidate()
 //            performSegue(withIdentifier: "purpleToYellowSegue", sender: nil)
-            nextQuestion()
+            nextQuestionFunc()
         }
     }
     
@@ -124,24 +130,23 @@ class Screen3ViewController: UIViewController {
         switch sender {
         case button1:
             currentQuestionAnswer = 0
-//            answerLabel.text = currentQuestions[currentQuestionIndex].answers[currentQuestionAnswer]
-            resetAnswerTest()
-            button1.setTitle("✅ \(currentQuestions[currentQuestionIndex].answers[currentQuestionAnswer])", for: .normal)
+            answerLabel.text = "Your Answer is: " + currentQuestions[currentQuestionIndex].answers[currentQuestionAnswer]
+          
 //            answersChosen.append(currentAnswers[0])
         case button2:
             currentQuestionAnswer = 1
-            resetAnswerTest()
-            answerLabel.text = currentQuestions[currentQuestionIndex].answers[currentQuestionAnswer]
+          
+            answerLabel.text = "Your Answer is: " + currentQuestions[currentQuestionIndex].answers[currentQuestionAnswer]
 //            answersChosen.append(currentAnswers[1])
         case button3:
             currentQuestionAnswer = 2
-            resetAnswerTest()
-            answerLabel.text = currentQuestions[currentQuestionIndex].answers[currentQuestionAnswer]
+       
+            answerLabel.text = "Your Answer is: " + currentQuestions[currentQuestionIndex].answers[currentQuestionAnswer]
 //            answersChosen.append(currentAnswers[2])
         case button4:
             currentQuestionAnswer = 3
-            resetAnswerTest()
-            answerLabel.text = currentQuestions[currentQuestionIndex].answers[currentQuestionAnswer]
+          
+            answerLabel.text = "Your Answer is: " + currentQuestions[currentQuestionIndex].answers[currentQuestionAnswer]
 //            answersChosen.append(currentAnswers[3])
         default:
             break
@@ -151,16 +156,9 @@ class Screen3ViewController: UIViewController {
     
 //        nextQuestion()
     }
-    
-    func resetAnswerTest() {
-        button1.setTitle(currentQuestions[currentQuestionIndex].answers[0], for: .normal)
-        button2.setTitle(currentQuestions[currentQuestionIndex].answers[1], for: .normal)
-        button3.setTitle(currentQuestions[currentQuestionIndex].answers[2], for: .normal)
-        button4.setTitle(currentQuestions[currentQuestionIndex].answers[3], for: .normal)
-    }
 
     @IBAction func nextQuestion(_ sender: Any) {
-        nextQuestion()
+        nextQuestionFunc()
     }
     
     func updateUI() {
@@ -179,15 +177,16 @@ class Screen3ViewController: UIViewController {
         button4.setTitle(currentQuestion.answers[3], for: .normal)
     }
     
-    func nextQuestion() {
+    func nextQuestionFunc() {
         currentQuestionIndex += 1
+        count = 0
         
         if currentQuestionIndex < currentQuestions.count {
             updateUI()
         }
-//        else {
-//            performSegue(withIdentifier: "Results", sender: nil)
-//        }
+        else {
+            performSegue(withIdentifier: "ResultSegue", sender: nil)
+        }
     }
     /*
     // MARK: - Navigation

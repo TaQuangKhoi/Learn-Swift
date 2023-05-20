@@ -8,7 +8,7 @@
 import Foundation
 
 struct Result {
-    var TestType: TestType
+    var testType: TestType
     var answeredQuestion: Int
     var rightQuestions: Int
     var rating: Int

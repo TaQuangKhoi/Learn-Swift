@@ -46,8 +46,8 @@
             filePath = "TaQuangKhoiGKSmartQuizz/Screen3ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
             landmarkName = "get10Question()"
             landmarkType = "7">
          </BreakpointContent>

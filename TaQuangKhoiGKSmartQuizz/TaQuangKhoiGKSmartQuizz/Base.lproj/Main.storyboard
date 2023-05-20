@@ -379,16 +379,17 @@
                         <outlet property="nextButton" destination="Se8-Uz-rCA" id="erC-wk-4dN"/>
                         <outlet property="questionLabel" destination="10X-RN-Q1e" id="sWO-WI-bTf"/>
                         <outlet property="timerLabel" destination="Pp4-VU-KUm" id="dEA-lG-ByS"/>
+                        <segue destination="riq-xe-XZO" kind="show" identifier="ResultSegue" id="DTD-Wv-V3m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cxT-Cb-AAj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3199" y="134"/>
         </scene>
-        <!--Screen2 Table View Controller-->
+        <!--Screen4 Table View Controller-->
         <scene sceneID="KkE-zB-hxh">
             <objects>
-                <tableViewController id="riq-xe-XZO" customClass="Screen2TableViewController" customModule="TaQuangKhoiGKSmartQuizz" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="riq-xe-XZO" customClass="Screen4TableViewController" customModule="TaQuangKhoiGKSmartQuizz" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="XYB-No-sDb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -562,6 +563,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="DTD-Wv-V3m"/>
         <segue reference="abX-Sn-DhN"/>
     </inferredMetricsTieBreakers>
     <resources>
