@@ -66,7 +66,7 @@ class Screen3ViewController: UIViewController {
     @IBOutlet weak var answerLabel: UILabel!
     var speedMode: TestTypeDetail?
     
-    var count:Int = 0
+    var count: Int = 0
     var timer = Timer()
     
     var result: Result?
@@ -98,7 +98,7 @@ class Screen3ViewController: UIViewController {
         timerLabel.text = "\(count)"
         
         if (count == 10) {
-            timer.invalidate()
+//            timer.invalidate()
 //            performSegue(withIdentifier: "purpleToYellowSegue", sender: nil)
             nextQuestionFunc()
         }
@@ -187,6 +187,7 @@ class Screen3ViewController: UIViewController {
     }
     
     func nextQuestionFunc() {
+        checkAnswer()
         currentQuestionIndex += 1
         currentQuestionAnswer = 4
         count = 0
