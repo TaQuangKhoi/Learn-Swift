@@ -10,6 +10,12 @@ import UIKit
 class Screen2TableViewController: UITableViewController {
     
     var speedMode: TestTypeDetail?
+    
+    @IBOutlet weak var speedValue: UILabel!
+    @IBOutlet weak var totalQuestionsValue: UILabel!
+    @IBOutlet weak var totalTimeValue: UILabel!
+    @IBOutlet weak var timePerQuestionsValue: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

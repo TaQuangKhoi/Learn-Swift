@@ -240,6 +240,12 @@
                     <navigationItem key="navigationItem" id="hdC-sZ-wx1">
                         <barButtonItem key="backBarButtonItem" title="Cancel" id="zNP-Ex-u1T"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="speedValue" destination="DEf-8b-Uad" id="cOP-E4-t0h"/>
+                        <outlet property="timePerQuestionsValue" destination="yWO-AL-Uyt" id="dTY-jP-2bw"/>
+                        <outlet property="totalQuestionsValue" destination="mX2-ND-BZk" id="cyh-IN-FR3"/>
+                        <outlet property="totalTimeValue" destination="pjy-4H-Xn1" id="BXi-68-0Fv"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ylE-o2-rR6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
