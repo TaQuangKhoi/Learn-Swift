@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F3D736B52A1852AF009DB31F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D736B42A1852AF009DB31F /* AppDelegate.swift */; };
 		F3D736B72A1852AF009DB31F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D736B62A1852AF009DB31F /* SceneDelegate.swift */; };
-		F3D736B92A1852AF009DB31F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D736B82A1852AF009DB31F /* ViewController.swift */; };
+		F3D736B92A1852AF009DB31F /* Screen1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D736B82A1852AF009DB31F /* Screen1ViewController.swift */; };
 		F3D736BC2A1852AF009DB31F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3D736BA2A1852AF009DB31F /* Main.storyboard */; };
 		F3D736BF2A1852AF009DB31F /* TaQuangKhoiGKSmartQuizz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3D736BD2A1852AF009DB31F /* TaQuangKhoiGKSmartQuizz.xcdatamodeld */; };
 		F3D736C12A1852B4009DB31F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D736C02A1852B4009DB31F /* Assets.xcassets */; };
@@ -20,7 +20,7 @@
 		F3D736B12A1852AF009DB31F /* TaQuangKhoiGKSmartQuizz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaQuangKhoiGKSmartQuizz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D736B42A1852AF009DB31F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3D736B62A1852AF009DB31F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F3D736B82A1852AF009DB31F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F3D736B82A1852AF009DB31F /* Screen1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1ViewController.swift; sourceTree = "<group>"; };
 		F3D736BB2A1852AF009DB31F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F3D736BE2A1852AF009DB31F /* TaQuangKhoiGKSmartQuizz.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaQuangKhoiGKSmartQuizz.xcdatamodel; sourceTree = "<group>"; };
 		F3D736C02A1852B4009DB31F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 			children = (
 				F3D736B42A1852AF009DB31F /* AppDelegate.swift */,
 				F3D736B62A1852AF009DB31F /* SceneDelegate.swift */,
-				F3D736B82A1852AF009DB31F /* ViewController.swift */,
+				F3D736B82A1852AF009DB31F /* Screen1ViewController.swift */,
 				F3D736BA2A1852AF009DB31F /* Main.storyboard */,
 				F3D736C02A1852B4009DB31F /* Assets.xcassets */,
 				F3D736C22A1852B4009DB31F /* LaunchScreen.storyboard */,
@@ -141,7 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3D736BF2A1852AF009DB31F /* TaQuangKhoiGKSmartQuizz.xcdatamodeld in Sources */,
-				F3D736B92A1852AF009DB31F /* ViewController.swift in Sources */,
+				F3D736B92A1852AF009DB31F /* Screen1ViewController.swift in Sources */,
 				F3D736B52A1852AF009DB31F /* AppDelegate.swift in Sources */,
 				F3D736B72A1852AF009DB31F /* SceneDelegate.swift in Sources */,
 			);
