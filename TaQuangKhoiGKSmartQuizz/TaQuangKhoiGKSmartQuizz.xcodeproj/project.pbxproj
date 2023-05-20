@@ -14,6 +14,7 @@
 		F3D736BF2A1852AF009DB31F /* TaQuangKhoiGKSmartQuizz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3D736BD2A1852AF009DB31F /* TaQuangKhoiGKSmartQuizz.xcdatamodeld */; };
 		F3D736C12A1852B4009DB31F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D736C02A1852B4009DB31F /* Assets.xcassets */; };
 		F3D736C42A1852B4009DB31F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3D736C22A1852B4009DB31F /* LaunchScreen.storyboard */; };
+		F3D736CE2A18582D009DB31F /* Screen2TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D736CD2A18582D009DB31F /* Screen2TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F3D736C02A1852B4009DB31F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3D736C32A1852B4009DB31F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3D736C52A1852B4009DB31F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3D736CD2A18582D009DB31F /* Screen2TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen2TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				F3D736B62A1852AF009DB31F /* SceneDelegate.swift */,
 				F3D736B82A1852AF009DB31F /* Screen1ViewController.swift */,
 				F3D736BA2A1852AF009DB31F /* Main.storyboard */,
+				F3D736CD2A18582D009DB31F /* Screen2TableViewController.swift */,
 				F3D736C02A1852B4009DB31F /* Assets.xcassets */,
 				F3D736C22A1852B4009DB31F /* LaunchScreen.storyboard */,
 				F3D736C52A1852B4009DB31F /* Info.plist */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3D736BF2A1852AF009DB31F /* TaQuangKhoiGKSmartQuizz.xcdatamodeld in Sources */,
+				F3D736CE2A18582D009DB31F /* Screen2TableViewController.swift in Sources */,
 				F3D736B92A1852AF009DB31F /* Screen1ViewController.swift in Sources */,
 				F3D736B52A1852AF009DB31F /* AppDelegate.swift in Sources */,
 				F3D736B72A1852AF009DB31F /* SceneDelegate.swift in Sources */,
