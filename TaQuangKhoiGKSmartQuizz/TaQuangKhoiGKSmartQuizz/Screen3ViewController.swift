@@ -140,9 +140,10 @@ class Screen3ViewController: UIViewController {
         
         if currentQuestionIndex < currentQuestions.count {
             updateUI()
-        } else {
-            performSegue(withIdentifier: "Results", sender: nil)
         }
+//        else {
+//            performSegue(withIdentifier: "Results", sender: nil)
+//        }
     }
     /*
     // MARK: - Navigation
