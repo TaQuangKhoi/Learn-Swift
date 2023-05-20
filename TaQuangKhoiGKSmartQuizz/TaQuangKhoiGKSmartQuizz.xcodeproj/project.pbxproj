@@ -16,6 +16,7 @@
 		F3D736C42A1852B4009DB31F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3D736C22A1852B4009DB31F /* LaunchScreen.storyboard */; };
 		F3D736CE2A18582D009DB31F /* Screen2TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D736CD2A18582D009DB31F /* Screen2TableViewController.swift */; };
 		F3D736D12A185C5D009DB31F /* Screen3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D736D02A185C5D009DB31F /* Screen3ViewController.swift */; };
+		F3D736D42A185F9F009DB31F /* Screen4TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D736D32A185F9F009DB31F /* Screen4TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F3D736C52A1852B4009DB31F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3D736CD2A18582D009DB31F /* Screen2TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen2TableViewController.swift; sourceTree = "<group>"; };
 		F3D736D02A185C5D009DB31F /* Screen3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen3ViewController.swift; sourceTree = "<group>"; };
+		F3D736D32A185F9F009DB31F /* Screen4TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen4TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				F3D736B42A1852AF009DB31F /* AppDelegate.swift */,
 				F3D736B62A1852AF009DB31F /* SceneDelegate.swift */,
 				F3D736B82A1852AF009DB31F /* Screen1ViewController.swift */,
+				F3D736D32A185F9F009DB31F /* Screen4TableViewController.swift */,
 				F3D736BA2A1852AF009DB31F /* Main.storyboard */,
 				F3D736D02A185C5D009DB31F /* Screen3ViewController.swift */,
 				F3D736CD2A18582D009DB31F /* Screen2TableViewController.swift */,
@@ -149,6 +152,7 @@
 				F3D736D12A185C5D009DB31F /* Screen3ViewController.swift in Sources */,
 				F3D736BF2A1852AF009DB31F /* TaQuangKhoiGKSmartQuizz.xcdatamodeld in Sources */,
 				F3D736CE2A18582D009DB31F /* Screen2TableViewController.swift in Sources */,
+				F3D736D42A185F9F009DB31F /* Screen4TableViewController.swift in Sources */,
 				F3D736B92A1852AF009DB31F /* Screen1ViewController.swift in Sources */,
 				F3D736B52A1852AF009DB31F /* AppDelegate.swift in Sources */,
 				F3D736B72A1852AF009DB31F /* SceneDelegate.swift in Sources */,

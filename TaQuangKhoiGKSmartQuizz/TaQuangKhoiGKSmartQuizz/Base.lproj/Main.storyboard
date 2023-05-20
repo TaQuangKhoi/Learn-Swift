@@ -263,10 +263,10 @@
             </objects>
             <point key="canvasLocation" x="140.57971014492756" y="133.92857142857142"/>
         </scene>
-        <!--Screen3 View Controller-->
+        <!--Screen4 View Controller-->
         <scene sceneID="GmG-jh-vHQ">
             <objects>
-                <viewController id="TuA-gx-l8x" customClass="Screen3ViewController" customModule="TaQuangKhoiGKSmartQuizz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="TuA-gx-l8x" customClass="Screen4ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QRl-S5-44l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
