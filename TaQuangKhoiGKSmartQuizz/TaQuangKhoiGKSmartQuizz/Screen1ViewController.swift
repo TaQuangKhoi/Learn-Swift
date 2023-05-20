@@ -16,7 +16,6 @@ class Screen1ViewController: UIViewController {
 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        segue.destination.navigationItem.title = textField.text
         
         if segue.identifier == "slowSpeedSegue" {
             let screen2ViewController = segue.destination as! Screen2TableViewController

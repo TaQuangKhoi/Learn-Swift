@@ -8,8 +8,8 @@
 import Foundation
 
 struct Question {
-    var Text: String
-    var Answers: Array<String> // 4 elements
-    var Result: Int // Index of Answers
-    var Image: String // Maybe Emoji
+    var text: String
+    var answers: Array<String> // 4 elements
+    var result: Int // Index of Answers
+    var image: String // Maybe Emoji
 }

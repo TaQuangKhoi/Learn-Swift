@@ -34,6 +34,17 @@ class Screen2TableViewController: UITableViewController {
         totalTimeValue.text = speedMode?.totalTime
         timePerQuestionsValue.text = speedMode?.timePerQuestion
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "startGameSegue" {
+            let screen3ViewController = segue.destination as! Screen3ViewController
+            
+            screen3ViewController.speedMode = self.speedMode
+            
+            return
+        }
+    }
 
     // MARK: - Table view data source
 
