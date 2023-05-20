@@ -343,6 +343,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="9fI-mw-aE5"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="button1" destination="OT7-1k-Hwr" id="Voo-cf-XVx"/>
+                        <outlet property="button2" destination="BCX-OF-rew" id="ZLQ-do-naS"/>
+                        <outlet property="button3" destination="VsM-eQ-NEq" id="Q1V-dk-4MZ"/>
+                        <outlet property="button4" destination="LnC-mq-PwM" id="dRv-rh-BZL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cxT-Cb-AAj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

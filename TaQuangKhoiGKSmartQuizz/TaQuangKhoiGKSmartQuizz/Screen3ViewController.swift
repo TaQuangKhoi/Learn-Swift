@@ -47,6 +47,12 @@ class Screen3ViewController: UIViewController {
     var currentQuestions: [Question] = []
     
     
+    @IBOutlet weak var button1: UIButton!
+    @IBOutlet weak var button2: UIButton!
+    @IBOutlet weak var button3: UIButton!
+    @IBOutlet weak var button4: UIButton!
+    
+    
     var speedMode: TestTypeDetail?
 
     override func viewDidLoad() {
