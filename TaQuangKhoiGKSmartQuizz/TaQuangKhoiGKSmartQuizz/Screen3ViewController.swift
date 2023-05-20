@@ -46,19 +46,28 @@ class Screen3ViewController: UIViewController {
     
     var currentQuestions: [Question] = []
     
+    var currentQuestionIndex = 0
+    
+    @IBOutlet weak var questionLabel: UILabel!
     
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var button3: UIButton!
     @IBOutlet weak var button4: UIButton!
     
+    @IBOutlet weak var nextButton: UIButton!
     
+    @IBOutlet weak var answerLabel: UILabel!
     var speedMode: TestTypeDetail?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        nextButton.isEnabled = false
+        
         get10Question()
+        
+        updateUI()
 
         // Do any additional setup after loading the view.
     }
@@ -83,7 +92,58 @@ class Screen3ViewController: UIViewController {
         }
     }
     
+    @IBAction func singleAnswerButtonPressed(_ sender: UIButton) {
+//        let currentAnswers = questions[questionIndex].answers
+        
+        switch sender {
+        case button1:
+            answerLabel.text = "Text"
+//            answersChosen.append(currentAnswers[0])
+        case button2:
+            answerLabel.text = "Text"
+//            answersChosen.append(currentAnswers[1])
+        case button3:
+            answerLabel.text = "Text"
+//            answersChosen.append(currentAnswers[2])
+        case button4:
+            answerLabel.text = "Text"
+//            answersChosen.append(currentAnswers[3])
+        default:
+            break
+        }
+    
+        nextQuestion()
+    }
 
+    @IBAction func nextQuestion(_ sender: Any) {
+        
+    }
+    
+    func updateUI() {
+        
+        let currentQuestion = currentQuestions[currentQuestionIndex]
+        
+//        let totalProgress = Float(currentQuestionIndex) / Float(currentQuestions.count)
+        
+        questionLabel.text = currentQuestion.text
+//        questionProgressView.setProgress(totalProgress, animated:
+//            true)
+        
+        button1.setTitle(currentQuestion.answers[0], for: .normal)
+        button2.setTitle(currentQuestion.answers[1], for: .normal)
+        button3.setTitle(currentQuestion.answers[2], for: .normal)
+        button4.setTitle(currentQuestion.answers[3], for: .normal)
+    }
+    
+    func nextQuestion() {
+        currentQuestionIndex += 1
+        
+        if currentQuestionIndex < currentQuestions.count {
+            updateUI()
+        } else {
+            performSegue(withIdentifier: "Results", sender: nil)
+        }
+    }
     /*
     // MARK: - Navigation
 
