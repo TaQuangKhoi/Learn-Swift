@@ -97,7 +97,7 @@ class Screen3ViewController: UIViewController {
         count += 1
         timerLabel.text = "\(count)"
         
-        if (count == 10) {
+        if (count == speedMode?.timePerQuestion) {
 //            timer.invalidate()
 //            performSegue(withIdentifier: "purpleToYellowSegue", sender: nil)
             nextQuestionFunc()

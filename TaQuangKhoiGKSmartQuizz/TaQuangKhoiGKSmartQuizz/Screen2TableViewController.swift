@@ -30,9 +30,18 @@ class Screen2TableViewController: UITableViewController {
     
     func updateUI() {
         speedValue.text = speedMode?.name.text
-        totalQuestionsValue.text = speedMode?.totalQuestions
-        totalTimeValue.text = speedMode?.totalTime
-        timePerQuestionsValue.text = speedMode?.timePerQuestion
+        if let totalQuestions = speedMode?.totalQuestions {
+            totalQuestionsValue.text = totalQuestions
+        }
+        
+        if let totalTime = speedMode?.totalTime {
+            totalTimeValue.text = totalTime
+        }
+        
+        if let timePerQuestion = speedMode?.timePerQuestion {
+            timePerQuestionsValue.text = String(timePerQuestion)
+        }
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

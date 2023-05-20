@@ -24,7 +24,7 @@ class Screen1ViewController: UIViewController {
                 name: .SLOW,
                 totalQuestions: "10",
                 totalTime: "100",
-                timePerQuestion: "10"
+                timePerQuestion: 10
             )
             
             screen2ViewController.speedMode = speedMode
@@ -37,7 +37,7 @@ class Screen1ViewController: UIViewController {
                 name: .SLOW,
                 totalQuestions: "10",
                 totalTime: "60",
-                timePerQuestion: "6"
+                timePerQuestion: 6
             )
             
             screen2ViewController.speedMode = speedMode
@@ -50,7 +50,7 @@ class Screen1ViewController: UIViewController {
                 name: .SLOW,
                 totalQuestions: "10",
                 totalTime: "30",
-                timePerQuestion: "3"
+                timePerQuestion: 3
             )
             
             screen2ViewController.speedMode = speedMode

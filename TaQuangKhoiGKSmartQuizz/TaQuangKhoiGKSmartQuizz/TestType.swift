@@ -26,5 +26,5 @@ struct TestTypeDetail {
     var name: TestType
     var totalQuestions: String
     var totalTime: String
-    var timePerQuestion: String
+    var timePerQuestion: Int
 }
