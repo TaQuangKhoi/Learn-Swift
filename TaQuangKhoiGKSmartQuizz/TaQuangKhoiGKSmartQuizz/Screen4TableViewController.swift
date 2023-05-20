@@ -37,11 +37,27 @@ class Screen4TableViewController: UITableViewController {
         
         if let rightQuestions = result?.rightQuestions {
             totalRightAnswer.text = String(rightQuestions)
+            ratingValue.text = String(calRating(rightAnswer: rightQuestions))
         }
+    }
+    
+    func calRating(rightAnswer: Int) -> Int {
+        var rating = 0
+            if rightAnswer == 10 {
+                rating = 5
+            } else if rightAnswer >= 8 {
+                rating = 4
+            } else if rightAnswer >= 6 {
+                rating = 3
+            } else if rightAnswer >= 4 {
+                rating = 2
+            } else if rightAnswer == 3 {
+                rating = 1
+            } else if rightAnswer >= 1 {
+                rating = 0
+            }
         
-        if let rating = result?.rating {
-            ratingValue.text = String(rating)
-        }
+        return rating
     }
 
     // MARK: - Table view data source

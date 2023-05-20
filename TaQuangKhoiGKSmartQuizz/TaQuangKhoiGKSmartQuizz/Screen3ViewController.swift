@@ -84,7 +84,7 @@ class Screen3ViewController: UIViewController {
                                      userInfo: nil,
                                      repeats: true)
         
-        nextButton.isEnabled = false
+        
         
         get10Question()
         
@@ -172,17 +172,18 @@ class Screen3ViewController: UIViewController {
         if currentQuestionAnswer == currentQuestions[currentQuestionIndex].result {
             result?.rightQuestions += 1
         }
+        currentQuestionAnswer = 4
     }
     
     func updateUI() {
+        nextButton.isEnabled = false
         
         let currentQuestion = currentQuestions[currentQuestionIndex]
         
 //        let totalProgress = Float(currentQuestionIndex) / Float(currentQuestions.count)
         
         questionLabel.text = currentQuestion.text
-//        questionProgressView.setProgress(totalProgress, animated:
-//            true)
+        answerLabel.text = ""
         
         button1.setTitle(currentQuestion.answers[0], for: .normal)
         button2.setTitle(currentQuestion.answers[1], for: .normal)
@@ -193,7 +194,7 @@ class Screen3ViewController: UIViewController {
     func nextQuestionFunc() {
         
         currentQuestionIndex += 1
-        currentQuestionAnswer = 4
+        
         count = 0
         
         if currentQuestionIndex < currentQuestions.count {
@@ -215,6 +216,8 @@ class Screen3ViewController: UIViewController {
             return
         }
     }
+    
+    
     
     
     /*
