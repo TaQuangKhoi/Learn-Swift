@@ -12,8 +12,8 @@ enum TestType: String {
 }
 
 struct TestTypeDetail {
-    var Name: TestType
-    var TotalQuestions: Int
-    var TotalTime: Int
-    var TimePerQuestion: Int
+    var name: TestType
+    var totalQuestions: Int
+    var totalTime: Int
+    var timePerQuestion: Int
 }
