@@ -100,5 +100,21 @@ class QuestionsTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func unwindToQuestionTable(_ unwindSegue: UIStoryboardSegue) {
+        guard unwindSegue.identifier == "unwindSaveTopicSegue",
+                let sourceViewController = unwindSegue.source
+                   as? AddEditQuestionViewController,
+                let question = sourceViewController.question else { return }
+        
+            if let selectedIndexPath = tableView.indexPathForSelectedRow {
+                questions[selectedIndexPath.row] = question
+                tableView.reloadRows(at: [selectedIndexPath], with: .none)
+            } else {
+                let newIndexPath = IndexPath(row: questions.count, section: 0)
+                questions.append(question)
+                tableView.insertRows(at: [newIndexPath], with: .automatic)
+            }
+    }
 
 }
