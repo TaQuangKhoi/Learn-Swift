@@ -47,5 +47,12 @@ class AddEditTopicViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "unwindSaveTopicSegue" else { return }
+
+        let name = topicNameTxtField.text ?? ""
+        topic = Topic(name: name)
+    }
 
 }

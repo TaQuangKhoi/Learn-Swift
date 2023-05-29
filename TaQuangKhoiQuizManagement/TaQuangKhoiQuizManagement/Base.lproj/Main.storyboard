@@ -27,7 +27,7 @@
                                     <color key="titleColor" systemColor="systemRedColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Sye-XP-Zyn" kind="unwind" unwindAction="unwindToTopicTable:" id="Vqt-Vo-5h6"/>
+                                    <segue destination="Sye-XP-Zyn" kind="unwind" identifier="unwindCancelTopic" unwindAction="unwindToTopicTable:" id="Vqt-Vo-5h6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vZ-0b-Qvf">
@@ -52,7 +52,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Enter Topic Title" id="F0L-da-wZK">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="JQU-h5-Him"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="JQU-h5-Him">
+                            <connections>
+                                <segue destination="Sye-XP-Zyn" kind="unwind" identifier="unwindSaveTopicSegue" unwindAction="unwindToTopicTable:" id="AKH-Wg-GhH"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="topicNameTxtField" destination="UAG-Og-Epk" id="JiI-0o-LEE"/>
@@ -72,15 +76,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="QuestionCell" id="nxd-IS-ObB" customClass="QuestionTableViewCell" customModule="TaQuangKhoiQuizManagement">
-                                <rect key="frame" x="0.0" y="28" width="414" height="57.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="QuestionCell" id="nxd-IS-ObB" customClass="QuestionTableViewCell" customModule="TaQuangKhoiQuizManagement" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nxd-IS-ObB" id="bcP-Wj-WYG">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="57.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="57"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ss9-HI-gQ5" userLabel="Question Name Label">
-                                            <rect key="frame" x="48" y="18" width="318" height="21.5"/>
+                                            <rect key="frame" x="48" y="18" width="318" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>

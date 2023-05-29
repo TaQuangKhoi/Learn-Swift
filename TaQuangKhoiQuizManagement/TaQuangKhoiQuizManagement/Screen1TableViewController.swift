@@ -127,6 +127,19 @@ class Screen1TableViewController: UITableViewController {
     */
     
     @IBAction func unwindToTopicTable(_ unwindSegue: UIStoryboardSegue) {
+        guard unwindSegue.identifier == "unwindSaveTopicSegue",
+                let sourceViewController = unwindSegue.source
+                   as? AddEditTopicViewController,
+                let topic = sourceViewController.topic else { return }
+        
+            if let selectedIndexPath = tableView.indexPathForSelectedRow {
+                topics[selectedIndexPath.row] = topic
+                tableView.reloadRows(at: [selectedIndexPath], with: .none)
+            } else {
+                let newIndexPath = IndexPath(row: topics.count, section: 0)
+                topics.append(topic)
+                tableView.insertRows(at: [newIndexPath], with: .automatic)
+            }
     }
 
 }
