@@ -23,8 +23,22 @@ class Screen1TableViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+//         self.navigationItem.rightBarButtonItem = self.editButtonItem
         self.navigationItem.leftBarButtonItem = self.editButtonItem
+    }
+    
+    @IBSegueAction func addEditTopic(_ coder: NSCoder, sender: Any?) -> UIViewController? {
+        if let cell = sender as? UITableViewCell,
+           let indexPath = tableView.indexPath(for: cell) {
+            // Editing Emoji
+            let topicToEdit = topics[indexPath.row]
+            return AddEditTopicViewController(coder: coder,
+               topic: topicToEdit)
+        } else {
+            // Adding Emoji
+            return AddEditTopicViewController(coder: coder,
+               topic: nil)
+        }
     }
     
     func getData() -> Array<Topic> {

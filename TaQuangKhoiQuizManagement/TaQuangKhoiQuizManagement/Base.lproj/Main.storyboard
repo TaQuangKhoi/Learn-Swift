@@ -11,7 +11,7 @@
         <!--Enter Topic Title-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TaQuangKhoiQuizManagement" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AddEditTopicViewController" customModule="TaQuangKhoiQuizManagement" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,17 +22,26 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrt-Km-lt0">
-                                <rect key="frame" x="183" y="178" width="48" height="30"/>
+                                <rect key="frame" x="338" y="178" width="48" height="30"/>
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" systemColor="systemRedColor"/>
                                 </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vZ-0b-Qvf">
+                                <rect key="frame" x="28" y="178" width="100" height="30"/>
+                                <state key="normal" title="Edit Questions"/>
+                                <connections>
+                                    <segue destination="yMW-zX-5qe" kind="show" identifier="QuestionListSegue" id="ggj-qi-n3u"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="wrt-Km-lt0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8EW-OL-uU5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wrt-Km-lt0" secondAttribute="trailing" constant="28" id="ARH-3b-lIx"/>
+                            <constraint firstItem="3vZ-0b-Qvf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="AXF-SE-8xj"/>
                             <constraint firstItem="UAG-Og-Epk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="GYz-Zt-Kao"/>
+                            <constraint firstItem="3vZ-0b-Qvf" firstAttribute="top" secondItem="UAG-Og-Epk" secondAttribute="bottom" constant="28" id="Hou-ZW-kCh"/>
                             <constraint firstItem="wrt-Km-lt0" firstAttribute="top" secondItem="UAG-Og-Epk" secondAttribute="bottom" constant="28" id="KcW-uZ-gUp"/>
                             <constraint firstItem="UAG-Og-Epk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="28" id="L0g-Vc-LNU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UAG-Og-Epk" secondAttribute="trailing" constant="28" id="iNj-GR-heN"/>
@@ -45,7 +54,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2211.594202898551" y="144.64285714285714"/>
+            <point key="canvasLocation" x="3121.739130434783" y="144.64285714285714"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="USK-af-ZnV">
+            <objects>
+                <tableViewController id="yMW-zX-5qe" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="11E-F3-bt7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="nxd-IS-ObB">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nxd-IS-ObB" id="bcP-Wj-WYG">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="yMW-zX-5qe" id="z8z-qE-POx"/>
+                            <outlet property="delegate" destination="yMW-zX-5qe" id="dQj-mY-ocA"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="rus-LZ-3HH"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zkE-Ka-pOp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3977" y="145"/>
         </scene>
         <!--Screen1 Table View Controller-->
         <scene sceneID="xBr-Cp-CGg">
@@ -79,6 +117,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="nameLabel" destination="G23-Gg-H2Z" id="Skh-y7-fn9"/>
+                                    <segue destination="Tw1-cA-7zc" kind="show" identifier="EditTopicSegue" id="sdQ-L1-lxh"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -90,7 +129,7 @@
                     <navigationItem key="navigationItem" id="POg-3R-weO">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="jwn-dL-eVW">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" identifier="AddSegue" id="OAP-Pa-CxG"/>
+                                <segue destination="Tw1-cA-7zc" kind="show" identifier="AddTopicSegue" id="YJW-D3-2qB"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -117,7 +156,29 @@
             </objects>
             <point key="canvasLocation" x="560.86956521739137" y="144.64285714285714"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vvR-Dg-rhW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Tw1-cA-7zc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="wOo-KD-Ls4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2P1-N5-bWj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" destinationCreationSelector="addEditTopic:sender:" id="thA-t3-7N6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZI-5b-xde" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2409" y="145"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="sdQ-L1-lxh"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
