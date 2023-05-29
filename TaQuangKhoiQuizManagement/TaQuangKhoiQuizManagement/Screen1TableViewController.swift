@@ -22,6 +22,26 @@ class Screen1TableViewController: UITableViewController {
         super.viewDidLoad()
         
 //        topics = getData()
+        
+        //1
+          guard let appDelegate =
+            UIApplication.shared.delegate as? AppDelegate else {
+              return
+          }
+          
+          let managedContext =
+            appDelegate.persistentContainer.viewContext
+          
+          //2
+          let fetchRequest =
+            NSFetchRequest<NSManagedObject>(entityName: "CoreTopic")
+          
+          //3
+          do {
+            coreTopics = try managedContext.fetch(fetchRequest)
+          } catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)")
+          }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -62,6 +82,7 @@ class Screen1TableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        print("coreTopics.count: \(coreTopics.count)")
         return coreTopics.count
     }
 
@@ -170,11 +191,13 @@ class Screen1TableViewController: UITableViewController {
                 let topic = sourceViewController.topic else { return }
         
             if let selectedIndexPath = tableView.indexPathForSelectedRow {
-                topics[selectedIndexPath.row] = topic
+//                topics[selectedIndexPath.row] = topic
+                self.save(name: topic.name)
                 tableView.reloadRows(at: [selectedIndexPath], with: .none)
             } else {
-                let newIndexPath = IndexPath(row: topics.count, section: 0)
-                topics.append(topic)
+                let newIndexPath = IndexPath(row: coreTopics.count, section: 0)
+//                topics.append(topic)
+                self.save(name: topic.name)
                 tableView.insertRows(at: [newIndexPath], with: .automatic)
             }
     }
