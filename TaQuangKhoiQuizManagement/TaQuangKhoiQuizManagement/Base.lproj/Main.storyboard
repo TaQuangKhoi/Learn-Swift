@@ -69,12 +69,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="nxd-IS-ObB">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="QuestionCell" id="nxd-IS-ObB" customClass="QuestionTableViewCell" customModule="TaQuangKhoiQuizManagement" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nxd-IS-ObB" id="bcP-Wj-WYG">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="57"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ss9-HI-gQ5" userLabel="Question Name Label">
+                                            <rect key="frame" x="48" y="18" width="318" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ss9-HI-gQ5" firstAttribute="leading" secondItem="bcP-Wj-WYG" secondAttribute="leadingMargin" constant="28" id="Xrf-Ee-Hrv"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="ss9-HI-gQ5" secondAttribute="bottom" constant="7" id="fai-BB-zuj"/>
+                                        <constraint firstItem="ss9-HI-gQ5" firstAttribute="top" secondItem="bcP-Wj-WYG" secondAttribute="topMargin" constant="7" id="tor-p7-HVE"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="ss9-HI-gQ5" secondAttribute="trailing" constant="28" id="y86-I9-tXi"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>

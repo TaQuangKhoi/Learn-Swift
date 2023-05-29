@@ -20,6 +20,7 @@
 		F31786F82A243A3E0042CADC /* AddEditTopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31786F72A243A3E0042CADC /* AddEditTopicViewController.swift */; };
 		F31786FB2A2440280042CADC /* QuestionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31786FA2A2440280042CADC /* QuestionsTableViewController.swift */; };
 		F31786FE2A2440490042CADC /* TopicQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31786FD2A2440490042CADC /* TopicQuestion.swift */; };
+		F31787022A2442C20042CADC /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31787012A2442C20042CADC /* QuestionTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		F31786F72A243A3E0042CADC /* AddEditTopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditTopicViewController.swift; sourceTree = "<group>"; };
 		F31786FA2A2440280042CADC /* QuestionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsTableViewController.swift; sourceTree = "<group>"; };
 		F31786FD2A2440490042CADC /* TopicQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicQuestion.swift; sourceTree = "<group>"; };
+		F31787012A2442C20042CADC /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				F31786D82A24282D0042CADC /* SceneDelegate.swift */,
 				F31786DA2A24282D0042CADC /* ViewController.swift */,
 				F31786DC2A24282D0042CADC /* Main.storyboard */,
+				F31787012A2442C20042CADC /* QuestionTableViewCell.swift */,
 				F31786FA2A2440280042CADC /* QuestionsTableViewController.swift */,
 				F31786FD2A2440490042CADC /* TopicQuestion.swift */,
 				F31786F72A243A3E0042CADC /* AddEditTopicViewController.swift */,
@@ -158,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F31787022A2442C20042CADC /* QuestionTableViewCell.swift in Sources */,
 				F31786F82A243A3E0042CADC /* AddEditTopicViewController.swift in Sources */,
 				F31786FB2A2440280042CADC /* QuestionsTableViewController.swift in Sources */,
 				F31786E12A24282D0042CADC /* TaQuangKhoiQuizManagement.xcdatamodeld in Sources */,

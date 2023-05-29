@@ -9,6 +9,11 @@ import UIKit
 
 class QuestionsTableViewController: UITableViewController {
     
+    var questions = [
+        TopicQuestion(name: "Ques 1", Answer: ["Ans 1", "Ans 2", "Ans 3", "Asn 4"]),
+        TopicQuestion(name: "Ques 2", Answer: ["Ans 1", "Ans 2", "Ans 3", "Asn 4"])
+    ]
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +22,7 @@ class QuestionsTableViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+         self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
@@ -29,18 +34,27 @@ class QuestionsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+//        return questions.count
         return 0
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
         // Configure the cell...
+        //Step 1: Dequeue cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "QuestionCell", for: indexPath) as! QuestionTableViewCell
 
+        //Step 2: Fetch model object to display
+        let question = questions[indexPath.row]
+
+        //Step 3: Configure cell
+        cell.update(with: question)
+        cell.showsReorderControl = true
+
+        //Step 4: Return cell
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
