@@ -26,6 +26,9 @@
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" systemColor="systemRedColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Sye-XP-Zyn" kind="unwind" unwindAction="unwindToTopicTable:" id="Vqt-Vo-5h6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vZ-0b-Qvf">
                                 <rect key="frame" x="28" y="178" width="100" height="30"/>
@@ -53,13 +56,14 @@
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="Sye-XP-Zyn" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3121.739130434783" y="144.64285714285714"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Questions Table View Controller-->
         <scene sceneID="USK-af-ZnV">
             <objects>
-                <tableViewController id="yMW-zX-5qe" sceneMemberID="viewController">
+                <tableViewController id="yMW-zX-5qe" customClass="QuestionsTableViewController" customModule="TaQuangKhoiQuizManagement" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="11E-F3-bt7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
