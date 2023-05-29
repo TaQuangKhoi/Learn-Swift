@@ -8,9 +8,16 @@
 import UIKit
 
 class Screen1TableViewController: UITableViewController {
+    
+    var topics : Array<Topic> = [
+        Topic(name: "Test 1"),
+        Topic(name: "Test 2")
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        topics = getData()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -19,8 +26,12 @@ class Screen1TableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
-    func getData() {
-        
+    func getData() -> Array<Topic> {
+        let topic = [
+            Topic(name: "Test 1"),
+            Topic(name: "Test 2")
+        ]
+        return topic
     }
 
     // MARK: - Table view data source
@@ -32,18 +43,26 @@ class Screen1TableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return topics.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
         // Configure the cell...
+        //Step 1: Dequeue cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TopicCell", for: indexPath) as! TopicTableViewCell
 
+        //Step 2: Fetch model object to display
+        let topic = topics[indexPath.row]
+
+        //Step 3: Configure cell
+        cell.update(with: topic)
+        cell.showsReorderControl = true
+
+        //Step 4: Return cell
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
