@@ -70,21 +70,21 @@
         <!--Questions Table View Controller-->
         <scene sceneID="USK-af-ZnV">
             <objects>
-                <tableViewController id="yMW-zX-5qe" customClass="QuestionsTableViewController" customModule="TaQuangKhoiQuizManagement" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="yMW-zX-5qe" customClass="QuestionsTableViewController" customModule="TaQuangKhoiQuizManagement" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="11E-F3-bt7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="QuestionCell" id="nxd-IS-ObB" customClass="QuestionTableViewCell" customModule="TaQuangKhoiQuizManagement" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="57"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="QuestionCell" id="nxd-IS-ObB" customClass="QuestionTableViewCell" customModule="TaQuangKhoiQuizManagement">
+                                <rect key="frame" x="0.0" y="28" width="414" height="57.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nxd-IS-ObB" id="bcP-Wj-WYG">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="57"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="57.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ss9-HI-gQ5" userLabel="Question Name Label">
-                                            <rect key="frame" x="48" y="18" width="318" height="21"/>
+                                            <rect key="frame" x="48" y="18" width="318" height="21.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -129,14 +129,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TopicCell" id="zEu-6N-Yat" customClass="TopicTableViewCell" customModule="TaQuangKhoiQuizManagement">
-                                <rect key="frame" x="0.0" y="28" width="414" height="57.5"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="57"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zEu-6N-Yat" id="3fu-mN-0Al">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="57.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="57"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G23-Gg-H2Z">
-                                            <rect key="frame" x="48" y="18" width="318" height="21.5"/>
+                                            <rect key="frame" x="48" y="18" width="318" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -212,7 +212,7 @@
         <!--Enter Topic Title-->
         <scene sceneID="bcX-6F-5hx">
             <objects>
-                <viewController id="3qq-Ph-59U" customClass="AddEditTopicViewController" customModule="TaQuangKhoiQuizManagement" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3qq-Ph-59U" customClass="AddEditQuestionViewController" customModule="TaQuangKhoiQuizManagement" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pce-SF-KAK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -338,6 +338,14 @@
                     <navigationItem key="navigationItem" title="Enter Topic Title" id="oyw-Hy-K4g">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="3NT-TC-72v"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="answer1TF" destination="WDP-de-1W0" id="xlc-Mh-CD6"/>
+                        <outlet property="answer2TF" destination="ynV-KO-kQY" id="hWO-9W-cgB"/>
+                        <outlet property="answer3TF" destination="HgZ-wf-WSu" id="0BQ-pQ-ED7"/>
+                        <outlet property="answer4TF" destination="cZA-lG-l98" id="0Sc-Hw-Pvc"/>
+                        <outlet property="questionNameTF" destination="7rZ-Md-lRq" id="GcR-Lc-4AG"/>
+                        <outlet property="rightAnswerIndex" destination="5eK-6i-opf" id="Kya-JO-bod"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vIM-8g-c9k" sceneMemberID="firstResponder"/>
             </objects>
