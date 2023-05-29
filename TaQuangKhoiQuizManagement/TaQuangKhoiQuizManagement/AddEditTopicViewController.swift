@@ -6,14 +6,18 @@
 //
 
 import UIKit
+import CoreData
 
 class AddEditTopicViewController: UIViewController {
     
     @IBOutlet weak var topicNameTxtField: UITextField!
     var topic : Topic?
     
-    init?(coder: NSCoder, topic: Topic?) {
+    var coreTopic: NSManagedObject?
+    
+    init?(coder: NSCoder, topic: Topic?, coreTopic: NSManagedObject?) {
         self.topic = topic
+        self.coreTopic = coreTopic
         super.init(coder: coder)
     }
     
@@ -24,8 +28,8 @@ class AddEditTopicViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let topic = topic {
-            topicNameTxtField.text = topic.name
+        if let topic = coreTopic {
+            topicNameTxtField.text = topic.value(forKeyPath: "name") as? String
             title = "Edit Topic"
         } else {
             title = "Add Topic"
@@ -53,6 +57,7 @@ class AddEditTopicViewController: UIViewController {
 
         let name = topicNameTxtField.text ?? ""
         topic = Topic(name: name)
+        coreTopic?.setValue(name, forKeyPath: "name")
     }
 
 }

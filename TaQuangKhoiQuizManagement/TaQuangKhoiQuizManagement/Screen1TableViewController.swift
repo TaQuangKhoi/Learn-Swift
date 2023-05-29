@@ -55,13 +55,14 @@ class Screen1TableViewController: UITableViewController {
         if let cell = sender as? UITableViewCell,
            let indexPath = tableView.indexPath(for: cell) {
             // Editing Emoji
-            let topicToEdit = topics[indexPath.row]
+//            let topicToEdit = topics[indexPath.row]
+            let coreTopicToEdit = coreTopics[indexPath.row]
             return AddEditTopicViewController(coder: coder,
-               topic: topicToEdit)
+                  topic: nil, coreTopic: coreTopicToEdit)
         } else {
             // Adding Emoji
             return AddEditTopicViewController(coder: coder,
-               topic: nil)
+                                              topic: nil, coreTopic: nil)
         }
     }
     
@@ -149,7 +150,7 @@ class Screen1TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
-            topics.remove(at: indexPath.row)
+            coreTopics.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
@@ -160,9 +161,9 @@ class Screen1TableViewController: UITableViewController {
     
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-        let movedTopic = topics.remove(at: fromIndexPath.row)
+        let movedTopic = coreTopics.remove(at: fromIndexPath.row)
         
-        topics.insert(movedTopic, at: to.row)
+        coreTopics.insert(movedTopic, at: to.row)
     }
     
 
