@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class Screen1TableViewController: UITableViewController {
     
@@ -13,6 +14,9 @@ class Screen1TableViewController: UITableViewController {
         Topic(name: "Test 1"),
         Topic(name: "Test 2")
     ]
+    
+    var coreTopics: [NSManagedObject] = []
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,7 +62,7 @@ class Screen1TableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return topics.count
+        return coreTopics.count
     }
 
     
@@ -68,7 +72,8 @@ class Screen1TableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TopicCell", for: indexPath) as! TopicTableViewCell
 
         //Step 2: Fetch model object to display
-        let topic = topics[indexPath.row]
+//        let topic = topics[indexPath.row]
+        let topic = coreTopics[indexPath.row]
 
         //Step 3: Configure cell
         cell.update(with: topic)
@@ -76,6 +81,37 @@ class Screen1TableViewController: UITableViewController {
 
         //Step 4: Return cell
         return cell
+    }
+    
+    func save(name: String) {
+      
+      guard let appDelegate =
+        UIApplication.shared.delegate as? AppDelegate else {
+        return
+      }
+      
+      // 1
+      let managedContext =
+        appDelegate.persistentContainer.viewContext
+      
+      // 2
+      let entity =
+        NSEntityDescription.entity(forEntityName: "CoreTopic",
+                                   in: managedContext)!
+      
+      let topic = NSManagedObject(entity: entity,
+                                   insertInto: managedContext)
+      
+      // 3
+        topic.setValue(name, forKeyPath: "name")
+      
+      // 4
+      do {
+        try managedContext.save()
+        coreTopics.append(topic)
+      } catch let error as NSError {
+        print("Could not save. \(error), \(error.userInfo)")
+      }
     }
     
 

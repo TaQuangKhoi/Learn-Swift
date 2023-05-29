@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 class TopicTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
@@ -21,8 +22,8 @@ class TopicTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func update(with topic: Topic) {
-        nameLabel.text = topic.name
+    func update(with topic: NSManagedObject) {
+        nameLabel.text = topic.value(forKeyPath: "name") as? String
     }
 
 }
