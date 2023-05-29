@@ -8,6 +8,7 @@
 import UIKit
 
 class QuestionTableViewCell: UITableViewCell {
+    // Cannot add outlet, because this file does not appear on Assistant View :v
     @IBOutlet weak var nameLabel: UILabel!
 
     override func awakeFromNib() {

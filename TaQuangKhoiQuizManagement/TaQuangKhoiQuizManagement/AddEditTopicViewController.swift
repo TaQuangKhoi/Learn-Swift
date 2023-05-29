@@ -26,9 +26,9 @@ class AddEditTopicViewController: UIViewController {
         
         if let topic = topic {
             topicNameTxtField.text = topic.name
-            title = "Edit Emoji"
+            title = "Edit Topic"
         } else {
-            title = "Add Emoji"
+            title = "Add Topic"
         }
 
         // Do any additional setup after loading the view.

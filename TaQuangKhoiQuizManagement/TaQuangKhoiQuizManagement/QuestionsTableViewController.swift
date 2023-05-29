@@ -10,8 +10,8 @@ import UIKit
 class QuestionsTableViewController: UITableViewController {
     
     var questions = [
-        TopicQuestion(name: "Ques 1", Answer: ["Ans 1", "Ans 2", "Ans 3", "Asn 4"]),
-        TopicQuestion(name: "Ques 2", Answer: ["Ans 1", "Ans 2", "Ans 3", "Asn 4"])
+        TopicQuestion(name: "Ques 1", Answer: ["Ans 1", "Ans 2", "Ans 3", "Asn 4"], rightAnswer: 1),
+        TopicQuestion(name: "Ques 2", Answer: ["Ans 1", "Ans 2", "Ans 3", "Asn 4"], rightAnswer: 1)
     ]
     
 

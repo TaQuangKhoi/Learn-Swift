@@ -8,6 +8,8 @@
 import UIKit
 
 class AddEditQuestionViewController: UIViewController {
+    
+    var question : TopicQuestion?
 
     @IBOutlet weak var questionNameTF: UITextField!
     
@@ -21,8 +23,34 @@ class AddEditQuestionViewController: UIViewController {
     
     @IBOutlet weak var rightAnswerIndex: UITextField!
     
+    init?(coder: NSCoder, question: TopicQuestion?) {
+        self.question = question
+        super.init(coder: coder)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let question = question {
+            questionNameTF.text = question.name
+            
+            answer1TF.text = question.Answer[0]
+            answer2TF.text = question.Answer[1]
+            answer3TF.text = question.Answer[2]
+            answer4TF.text = question.Answer[3]
+            
+            questionNameTF.text = question.name
+            
+            rightAnswerIndex.text = String(question.rightAnswer)
+            
+            title = "Edit Question"
+        } else {
+            title = "Add Question"
+        }
 
         // Do any additional setup after loading the view.
     }

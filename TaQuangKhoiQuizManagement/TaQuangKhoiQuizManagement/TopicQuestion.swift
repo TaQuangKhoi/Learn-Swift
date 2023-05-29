@@ -10,4 +10,5 @@ import Foundation
 struct TopicQuestion {
     var name: String
     var Answer: Array<String>
+    var rightAnswer: Int
 }
