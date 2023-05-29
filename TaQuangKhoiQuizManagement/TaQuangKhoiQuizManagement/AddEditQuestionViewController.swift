@@ -65,5 +65,25 @@ class AddEditQuestionViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "unwindSaveTopicSegue" else { return }
+
+        let name = questionNameTF.text ?? ""
+        let ans1 = questionNameTF.text ?? ""
+        let ans2 = questionNameTF.text ?? ""
+        let ans3 = questionNameTF.text ?? ""
+        let ans4 = questionNameTF.text ?? ""
+        
+        var rightAns = 0
+        
+        if let CurRightAns = rightAnswerIndex.text {
+            rightAns = Int(CurRightAns) ?? 0
+        }
+        
+        let answer = [ans1, ans2, ans3, ans4]
+        
+        question = TopicQuestion(name: name, Answer: answer, rightAnswer: rightAns)
+    }
 
 }

@@ -37,6 +37,20 @@ class QuestionsTableViewController: UITableViewController {
 //        return questions.count
         return 0
     }
+    
+    @IBSegueAction func addEditQuestion(_ coder: NSCoder, sender: Any?) -> UIViewController? {
+        if let cell = sender as? UITableViewCell,
+           let indexPath = tableView.indexPath(for: cell) {
+            // Editing Question
+            let questionToEdit = questions[indexPath.row]
+            return AddEditQuestionViewController(coder: coder,
+               question: questionToEdit)
+        } else {
+            // Adding Question
+            return AddEditQuestionViewController(coder: coder,
+               question: nil)
+        }
+    }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
