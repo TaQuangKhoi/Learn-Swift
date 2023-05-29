@@ -363,7 +363,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="3qq-Ph-59U" kind="relationship" relationship="rootViewController" id="rAO-fE-c4V"/>
+                        <segue destination="3qq-Ph-59U" kind="relationship" relationship="rootViewController" destinationCreationSelector="addEditQuestion:sender:" id="rAO-fE-c4V"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cN2-nE-6JM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
