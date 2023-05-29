@@ -14,6 +14,7 @@
 		F31786E12A24282D0042CADC /* TaQuangKhoiQuizManagement.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F31786DF2A24282D0042CADC /* TaQuangKhoiQuizManagement.xcdatamodeld */; };
 		F31786E32A2428330042CADC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F31786E22A2428330042CADC /* Assets.xcassets */; };
 		F31786E62A2428330042CADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F31786E42A2428330042CADC /* LaunchScreen.storyboard */; };
+		F31786EF2A242AB50042CADC /* Screen1TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31786EE2A242AB50042CADC /* Screen1TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F31786E22A2428330042CADC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F31786E52A2428330042CADC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F31786E72A2428330042CADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F31786EE2A242AB50042CADC /* Screen1TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				F31786E42A2428330042CADC /* LaunchScreen.storyboard */,
 				F31786E72A2428330042CADC /* Info.plist */,
 				F31786DF2A24282D0042CADC /* TaQuangKhoiQuizManagement.xcdatamodeld */,
+				F31786EE2A242AB50042CADC /* Screen1TableViewController.swift */,
 			);
 			path = TaQuangKhoiQuizManagement;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			files = (
 				F31786E12A24282D0042CADC /* TaQuangKhoiQuizManagement.xcdatamodeld in Sources */,
 				F31786DB2A24282D0042CADC /* ViewController.swift in Sources */,
+				F31786EF2A242AB50042CADC /* Screen1TableViewController.swift in Sources */,
 				F31786D72A24282D0042CADC /* AppDelegate.swift in Sources */,
 				F31786D92A24282D0042CADC /* SceneDelegate.swift in Sources */,
 			);
