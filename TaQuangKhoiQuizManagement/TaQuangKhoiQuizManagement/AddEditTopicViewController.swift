@@ -9,6 +9,7 @@ import UIKit
 
 class AddEditTopicViewController: UIViewController {
     
+    @IBOutlet weak var topicNameTxtField: UITextField!
     var topic : Topic?
     
     init?(coder: NSCoder, topic: Topic?) {
@@ -22,10 +23,20 @@ class AddEditTopicViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let topic = topic {
+            topicNameTxtField.text = topic.name
+            title = "Edit Emoji"
+        } else {
+            title = "Add Emoji"
+        }
 
         // Do any additional setup after loading the view.
     }
     
+    func updateUI() {
+        
+    }
 
     /*
     // MARK: - Navigation
