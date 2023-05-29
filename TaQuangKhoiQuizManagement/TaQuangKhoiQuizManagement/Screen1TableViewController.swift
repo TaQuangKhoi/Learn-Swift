@@ -24,6 +24,7 @@ class Screen1TableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.navigationItem.leftBarButtonItem = self.editButtonItem
     }
     
     func getData() -> Array<Topic> {
@@ -84,12 +85,14 @@ class Screen1TableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
+        let movedTopic = topics.remove(at: fromIndexPath.row)
+        
+        topics.insert(movedTopic, at: to.row)
     }
-    */
+    
 
     /*
     // Override to support conditional rearranging of the table view.
